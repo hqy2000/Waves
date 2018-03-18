@@ -32,19 +32,19 @@ class Wave {
     }
 }
 
-class SimpleWaveForm {
-    public var wave:Wave
+class WaveForm {
+    public var waves:[Wave]
     public var interval:TimeInterval
-    private var startTime:Date? = nil
-    private var running:Bool = false
-    private var callback:((Double) -> Void)? = nil
+    internal var startTime:Date? = nil
+    internal var running:Bool = false
+    internal var callback:(([Double]) -> Void)? = nil
     
-    init(wave: Wave, reportInterval interval: TimeInterval) {
-        self.wave = wave
+    init(waves: [Wave], reportInterval interval: TimeInterval) {
+        self.waves = waves
         self.interval = interval
     }
     
-    public func start(callback: @escaping (Double) -> Void) {
+    public func start(callback: @escaping ([Double]) -> Void) {
         self.running = true
         self.startTime = Date()
         self.callback = callback
@@ -57,16 +57,33 @@ class SimpleWaveForm {
         self.callback = nil
     }
     
-    private func calc(){
+    internal func getAmplitude(wave:Wave) -> Double {
+        let time = Date().timeIntervalSince(self.startTime!)
+        let current = time.remainder(dividingBy: wave.period)
+        let rawAmplitude = sin(current / wave.period * 2.0 * Double.pi)
+        let amplitude = rawAmplitude * wave.amplitude
+        return amplitude
+    }
+    
+    internal func calc() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + interval) {
+            self.calc()
+        }
+    }
+}
+
+class SimpleWaveForm: WaveForm {
+    override internal func calc(){
         if(self.running) {
-            let time = Date().timeIntervalSince(self.startTime!)
-            let current = time.remainder(dividingBy: wave.period)
-            let rawAmplitude = sin(current / wave.period * 2.0 * Double.pi)
-            let amplitude = rawAmplitude * wave.amplitude
-            callback?(amplitude)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                self.calc()
+            var amplitudes:[Double] = []
+            for wave in waves {
+                amplitudes.append(self.getAmplitude(wave: wave))
             }
+            amplitudes.append(amplitudes.reduce(0.0, { (result, value) -> Double in
+                return result + value
+            }))
+            callback?(amplitudes)
+            super.calc()
         }
     }
     

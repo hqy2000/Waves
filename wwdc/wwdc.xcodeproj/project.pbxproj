@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6523CE3F205E1F620099CF0A /* Os.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6523CE3E205E1F620099CF0A /* Os.sks */; };
 		65A4A9F3205D0792001F6EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4A9F2205D0792001F6EF2 /* AppDelegate.swift */; };
 		65A4A9F5205D0792001F6EF2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65A4A9F4205D0792001F6EF2 /* GameScene.sks */; };
 		65A4A9F7205D0792001F6EF2 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65A4A9F6205D0792001F6EF2 /* Actions.sks */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6523CE3E205E1F620099CF0A /* Os.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Os.sks; sourceTree = "<group>"; };
 		65A4A9EF205D0792001F6EF2 /* wwdc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wwdc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A4A9F2205D0792001F6EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A4A9F4205D0792001F6EF2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				65A4A9F2205D0792001F6EF2 /* AppDelegate.swift */,
 				65A4A9F4205D0792001F6EF2 /* GameScene.sks */,
+				6523CE3E205E1F620099CF0A /* Os.sks */,
 				65A4A9F6205D0792001F6EF2 /* Actions.sks */,
 				65A4A9F8205D0792001F6EF2 /* GameScene.swift */,
 				65A4FA68205D7E020019FAF1 /* Wave.swift */,
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65A4A9FE205D0792001F6EF2 /* Main.storyboard in Resources */,
+				6523CE3F205E1F620099CF0A /* Os.sks in Resources */,
 				65A4A9F5205D0792001F6EF2 /* GameScene.sks in Resources */,
 				65A4AA00205D0792001F6EF2 /* Assets.xcassets in Resources */,
 				65A4AA03205D0792001F6EF2 /* LaunchScreen.storyboard in Resources */,
