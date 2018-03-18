@@ -20,6 +20,10 @@
 		658FEE13205D2D8700CAAC51 /* wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE0F205D2D8700CAAC51 /* wood.png */; };
 		658FEE14205D2D8700CAAC51 /* fork.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE10205D2D8700CAAC51 /* fork.mtl */; };
 		658FEE16205D2F3000CAAC51 /* 440.wav in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE15205D2F3000CAAC51 /* 440.wav */; };
+		658FEE19205D5BB000CAAC51 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE17205D5BB000CAAC51 /* confetti.png */; };
+		658FEE1D205D5C1200CAAC51 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE1B205D5C1200CAAC51 /* spark.png */; };
+		658FEE21205D5CDA00CAAC51 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE1F205D5CDA00CAAC51 /* smoke.png */; };
+		658FEE22205D5CDA00CAAC51 /* wave.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE20205D5CDA00CAAC51 /* wave.scnp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		658FEE0F205D2D8700CAAC51 /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wood.png; path = "../../../../fork OBJ/wood.png"; sourceTree = "<group>"; };
 		658FEE10205D2D8700CAAC51 /* fork.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fork.mtl; path = "../../../../fork OBJ/fork.mtl"; sourceTree = "<group>"; };
 		658FEE15205D2F3000CAAC51 /* 440.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 440.wav; sourceTree = "<group>"; };
+		658FEE17205D5BB000CAAC51 /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confetti.png; sourceTree = "<group>"; };
+		658FEE1B205D5C1200CAAC51 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		658FEE1F205D5CDA00CAAC51 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
+		658FEE20205D5CDA00CAAC51 /* wave.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = wave.scnp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,10 @@
 				658FEDDC205D0BFC00CAAC51 /* Assets.xcassets */,
 				658FEDDE205D0BFC00CAAC51 /* LaunchScreen.storyboard */,
 				658FEDE1205D0BFC00CAAC51 /* Info.plist */,
+				658FEE1B205D5C1200CAAC51 /* spark.png */,
+				658FEE1F205D5CDA00CAAC51 /* smoke.png */,
+				658FEE20205D5CDA00CAAC51 /* wave.scnp */,
+				658FEE17205D5BB000CAAC51 /* confetti.png */,
 			);
 			path = interference;
 			sourceTree = "<group>";
@@ -247,11 +259,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658FEE1D205D5C1200CAAC51 /* spark.png in Resources */,
 				658FEDD6205D0BFC00CAAC51 /* art.scnassets in Resources */,
 				658FEE11205D2D8700CAAC51 /* iron.png in Resources */,
 				658FEDE0205D0BFC00CAAC51 /* LaunchScreen.storyboard in Resources */,
+				658FEE19205D5BB000CAAC51 /* confetti.png in Resources */,
 				658FEE16205D2F3000CAAC51 /* 440.wav in Resources */,
+				658FEE22205D5CDA00CAAC51 /* wave.scnp in Resources */,
 				658FEE12205D2D8700CAAC51 /* fork.obj in Resources */,
+				658FEE21205D5CDA00CAAC51 /* smoke.png in Resources */,
 				658FEDDD205D0BFC00CAAC51 /* Assets.xcassets in Resources */,
 				658FEE14205D2D8700CAAC51 /* fork.mtl in Resources */,
 				658FEDDB205D0BFC00CAAC51 /* Main.storyboard in Resources */,
