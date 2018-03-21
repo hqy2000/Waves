@@ -13,7 +13,17 @@ class Wave: NSMutableCopying {
         return Wave(amplitude: self.amplitude, waveLength: self.waveLength, frequency: self.frequency)
     }
     
-    public var distanceFromObservor:Double // the distance from the observor to the node, measured in meters.
+    public var phaseDiffrenrce:Double = 0.0
+    public var distanceFromObservor:Double {
+        get {
+            fatalError("This is a write-only variable!")
+            //return 0.0
+        }
+        set {
+            let difference = newValue.remainder(dividingBy: self.waveLength) / self.waveLength
+            self.phaseDiffrenrce = difference * 2 * Double.pi
+        }
+    }
     public var amplitude:Double // the height of the wave, measured in meters.
     public var waveLength:Double // the distance between adjacent crests, measured in meters.
     public var frequency:Double // the number of complete waves that pass a point in one second, measured in inverse seconds, or Hertz (Hz).

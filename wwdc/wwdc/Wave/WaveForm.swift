@@ -11,7 +11,6 @@ import Foundation
 class WaveForm {
     public var waves:[Wave]
     public var interval:TimeInterval
-    public var distance:Double = 0
     internal var startTime:Date? = nil
     internal var running:Bool = false
 
