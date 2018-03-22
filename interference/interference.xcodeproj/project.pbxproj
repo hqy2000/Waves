@@ -15,6 +15,7 @@
 		658C43DD20633080003C7723 /* OscilloscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C43DB20633080003C7723 /* OscilloscopeViewController.swift */; };
 		658C43DE20633080003C7723 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C43DC20633080003C7723 /* GameScene.swift */; };
 		658C43E020633266003C7723 /* WaveFromProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C43DF20633266003C7723 /* WaveFromProtocol.swift */; };
+		658C43E220636174003C7723 /* WaveFormSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C43E120636174003C7723 /* WaveFormSimple.swift */; };
 		658FEDD4205D0BFC00CAAC51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FEDD3205D0BFC00CAAC51 /* AppDelegate.swift */; };
 		658FEDD6205D0BFC00CAAC51 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 658FEDD5205D0BFC00CAAC51 /* art.scnassets */; };
 		658FEDD8205D0BFC00CAAC51 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FEDD7205D0BFC00CAAC51 /* GameViewController.swift */; };
@@ -51,6 +52,7 @@
 		658C43DB20633080003C7723 /* OscilloscopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OscilloscopeViewController.swift; path = ../../../wwdc/wwdc/OscilloscopeViewController.swift; sourceTree = "<group>"; };
 		658C43DC20633080003C7723 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = ../../../wwdc/wwdc/GameScene.swift; sourceTree = "<group>"; };
 		658C43DF20633266003C7723 /* WaveFromProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveFromProtocol.swift; sourceTree = "<group>"; };
+		658C43E120636174003C7723 /* WaveFormSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveFormSimple.swift; sourceTree = "<group>"; };
 		658FEDD0205D0BFC00CAAC51 /* interference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = interference.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		658FEDD3205D0BFC00CAAC51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		658FEDD5205D0BFC00CAAC51 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				658C43D02063303F003C7723 /* WaveFormDoppler.swift */,
 				658C43D12063303F003C7723 /* WaveFormInterference.swift */,
 				658C43DF20633266003C7723 /* WaveFromProtocol.swift */,
+				658C43E120636174003C7723 /* WaveFormSimple.swift */,
 			);
 			path = Wave;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				658C43D92063303F003C7723 /* Wave.swift in Sources */,
 				658FEDD4205D0BFC00CAAC51 /* AppDelegate.swift in Sources */,
 				658C43D82063303F003C7723 /* WaveFormDecreasing.swift in Sources */,
+				658C43E220636174003C7723 /* WaveFormSimple.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

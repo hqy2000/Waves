@@ -11,14 +11,24 @@ import GameplayKit
 
 class GameScene<T: WaveFormProtocol>: SKScene {
     
-    private var previous:[CGPoint?] = [nil,nil,nil,nil]
-    private var node = SKNode()
-    public var waves:[Wave] = []
+    private var previous:[CGPoint?] = [nil]
+    private var waveform: T?
+    private var node: SKNode = SKNode()
+    public var waves:[Wave] = [] {
+        didSet {
+            waveform?.stop()
+            self.previous.removeAll()
+            while previous.count <= waves.count {
+                previous.append(nil)
+            }
+            self.draw()
+        }
+    }
     public var height:CGFloat = 30
     override func didMove(to view: SKView) {
         self.drawAxis()
         self.initialize()
-        self.drawWave()
+        self.draw()
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -32,7 +42,7 @@ class GameScene<T: WaveFormProtocol>: SKScene {
         //node.position = CGPoint(x: frame.width / 2 , y:0)
     }
     
-    private func drawWave() {
+    private func draw() {
         //let waves = [Wave(amplitude: 50, waveLength: 5, frequency: 0.5),Wave(amplitude: 50, waveLength: 5, frequency: 0.5)]
         //waves[1].distanceFromObservor = 2.5
         let waveform = T(waves: waves, reportInterval: 0.05)
@@ -46,6 +56,7 @@ class GameScene<T: WaveFormProtocol>: SKScene {
             }
             self.shift()
         }
+        self.waveform = waveform
     }
     private func drawWave(index:Int, amplitude:Double, color:UIColor = UIColor.green) {
         if let previous = previous[index] {
@@ -58,7 +69,7 @@ class GameScene<T: WaveFormProtocol>: SKScene {
             shape.strokeColor = color
             node.addChild(shape)
         } else {
-            self.previous[index] = CGPoint(x: 0.0, y: amplitude)
+            self.previous[index] = CGPoint(x: Double(-self.node.position.x + self.frame.width), y: amplitude)
         }
         
     }
@@ -92,7 +103,6 @@ class GameScene<T: WaveFormProtocol>: SKScene {
 }
 
 extension CGPath {
-    
     func forEach( body: @convention(block) (CGPathElement) -> Void) {
         typealias Body = @convention(block) (CGPathElement) -> Void
         let callback: @convention(c) (UnsafeMutableRawPointer, UnsafePointer<CGPathElement>) -> Void = { (info, element) in

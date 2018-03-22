@@ -71,7 +71,7 @@ class GameViewController: UIViewController {
             cameraNode.removeAction(forKey: "audio")
             scene.rootNode.removeParticleSystem(particle)
             scene.rootNode.addParticleSystem(particle)
-            self.oss.waves = [Wave(amplitude: 50, waveLength: 5, frequency: 0.5)]
+            self.oss.waves = [Wave(amplitude: 10, waveLength: 5, frequency: 0.5),Wave(amplitude: 20, waveLength: 5, frequency: 0.7)]
             self.oss.waves[0].distanceFromObservor = 2.5
             let audio = SCNAudioSource(fileNamed: "art.scnassets/440.wav")!
             cameraNode.runAction(SCNAction.playAudio(audio, waitForCompletion: true), forKey: "audio", completionHandler: {
