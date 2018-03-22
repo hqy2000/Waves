@@ -10,8 +10,9 @@ import UIKit
 import QuartzCore
 import SceneKit
 import SpriteKit
+import ARKit
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, ARSCNViewDelegate {
 
     let cameraNode = SCNNode()
     let scene = SCNScene(named: "art.scnassets/fork.obj")!
@@ -32,35 +33,31 @@ class GameViewController: UIViewController {
         lightNode.position = SCNVector3(x: 0, y: 10, z: 10)
         scene.rootNode.addChildNode(lightNode)
         
-        // retrieve the SCNView
-        let scnView = self.view as! SCNView
-        
-        // set the scene to the view
+        let scnView = self.view as! ARSCNView
         scnView.scene = scene
-        
-        // allows the user to manipulate the camera
         scnView.allowsCameraControl = false
-        
-       
         scnView.overlaySKScene = oss
-        
-        
-        
-        // show statistics such as fps and timing information
         scnView.showsStatistics = true
-        
-        // configure the view
         scnView.backgroundColor = UIColor.black
+        scnView.delegate = self
         
-        // add a tap gesture recognizer
+        let fork = scene.rootNode.childNode(withName: "mesh_1", recursively: true)!
+        fork.runAction(SCNAction.scale(by: 0.01, duration: 0))
+        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         scnView.addGestureRecognizer(tapGesture)
+        
+        UIApplication.shared.isIdleTimerDisabled = true
     }
     
-    @objc
-    func handleTap(_ gestureRecognize: UIGestureRecognizer) {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let scnView = self.view as! ARSCNView
+        scnView.session.run(ARWorldTrackingConfiguration())
+    }
+    @objc func handleTap(_ gestureRecognize: UIGestureRecognizer) {
         // retrieve the SCNView
-        let scnView = self.view as! SCNView
+        let scnView = self.view as! ARSCNView
         
         // check what nodes are tapped
         let p = gestureRecognize.location(in: scnView)
@@ -105,24 +102,12 @@ class GameViewController: UIViewController {
         }
     }
     
-    @objc func hit(){
-        
+  
+    func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
+        print(camera.trackingState)
     }
-    
-    override var shouldAutorotate: Bool {
-        return true
-    }
-    
     override var prefersStatusBarHidden: Bool {
         return true
-    }
-    
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
     }
     
     override func didReceiveMemoryWarning() {
