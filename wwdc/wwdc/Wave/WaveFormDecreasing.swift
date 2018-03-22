@@ -12,11 +12,15 @@ class WaveFormDecreasing: WaveForm {
     public var decreasingConstant: Double = 0.9
     override func calc() {
         if self.running {
-            let wave = waves[0]
-            var amplitudes = [self.getAmplitude(wave: wave)]
-            let parameter: Double = pow(self.decreasingConstant, Date().timeIntervalSince(self.startTime!))
-            amplitudes.append(amplitudes[0] * parameter)
-            callback?(amplitudes)
+            if waves.count > 0 {
+                let wave = waves[0]
+                var amplitudes = [self.getAmplitude(wave: wave)]
+                let parameter: Double = pow(self.decreasingConstant, Date().timeIntervalSince(self.startTime!))
+                amplitudes.append(amplitudes[0] * parameter)
+                callback?(amplitudes)
+            } else {
+                callback?([])
+            }
             super.calc()
         }
     }

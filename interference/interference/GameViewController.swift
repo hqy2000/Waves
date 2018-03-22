@@ -16,7 +16,7 @@ class GameViewController: UIViewController {
     let cameraNode = SCNNode()
     let scene = SCNScene(named: "art.scnassets/fork.obj")!
     let particle = SCNParticleSystem(named: "art.scnassets/wave.scnp", inDirectory: nil)!
-    let oss = GameScene<WaveFormInterference>(size: CGSize(width: 400, height: 400))
+    let oss = GameScene<WaveFormDecreasing>(size: CGSize(width: 400, height: 400))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +71,7 @@ class GameViewController: UIViewController {
             cameraNode.removeAction(forKey: "audio")
             scene.rootNode.removeParticleSystem(particle)
             scene.rootNode.addParticleSystem(particle)
-            self.oss.waves = [Wave(amplitude: 10, waveLength: 5, frequency: 0.5),Wave(amplitude: 20, waveLength: 5, frequency: 0.7)]
+            self.oss.waves = [Wave(amplitude: 30, waveLength: 5, frequency: 0.5)]
             self.oss.waves[0].distanceFromObservor = 2.5
             let audio = SCNAudioSource(fileNamed: "art.scnassets/440.wav")!
             cameraNode.runAction(SCNAction.playAudio(audio, waitForCompletion: true), forKey: "audio", completionHandler: {
