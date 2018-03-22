@@ -24,7 +24,10 @@ public class Oscilloscope<T: WaveFormProtocol>: SKScene {
             self.draw()
         }
     }
-    public var height:CGFloat = 30
+    public var height:CGFloat = 80
+    public var normalWaveColor: UIColor = .green
+    public var finalWaveColor: UIColor = .red
+    public var axisColor: UIColor = .white
     
     override public func didMove(to view: SKView) {
         self.drawAxis()
@@ -46,9 +49,9 @@ public class Oscilloscope<T: WaveFormProtocol>: SKScene {
         let waveform = T(waves: waves, reportInterval: 0.05)
         waveform.start { (amplitudes) in
             for (index,amplitude) in amplitudes.enumerated() {
-                var color = UIColor.green
+                var color = self.normalWaveColor
                 if(index >= self.waves.count){
-                    color = UIColor.red
+                    color = self.finalWaveColor
                 }
                 self.drawWave(index: index, amplitude: amplitude, color: color)
             }
@@ -65,6 +68,7 @@ public class Oscilloscope<T: WaveFormProtocol>: SKScene {
             ]
             self.previous[index] = CGPoint(x: Double(previous.x) + 1.0, y: amplitude)
             let shape = SKShapeNode(splinePoints: &points, count: points.count)
+            shape.lineWidth = 2.0
             shape.strokeColor = color
             node.addChild(shape)
         } else {
