@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WaveForm {
+class WaveForm: WaveFormProtocol {
     public var waves:[Wave]
     public var interval:TimeInterval
     internal var startTime:Date? = nil
@@ -16,7 +16,7 @@ class WaveForm {
 
     internal var callback:(([Double]) -> Void)? = nil
     
-    init(waves: [Wave], reportInterval interval: TimeInterval) {
+    required init(waves: [Wave], reportInterval interval: TimeInterval) {
         self.waves = waves
         self.interval = interval
     }
@@ -35,7 +35,7 @@ class WaveForm {
     }
     
     internal func getAmplitude(wave:Wave) -> Double {
-        let time = Date().timeIntervalSince(self.startTime!)
+        let time = Date().timeIntervalSince(self.startTime!) + wave.period * wave.phaseDifferenrce
         let current = time.remainder(dividingBy: wave.period)
         let rawAmplitude = sin(current / wave.period * 2.0 * Double.pi)
         let amplitude = rawAmplitude * wave.amplitude

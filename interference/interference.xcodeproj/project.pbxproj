@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		658C43D52063303F003C7723 /* WaveFormDoppler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C43D02063303F003C7723 /* WaveFormDoppler.swift */; };
+		658C43D62063303F003C7723 /* WaveFormInterference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C43D12063303F003C7723 /* WaveFormInterference.swift */; };
+		658C43D72063303F003C7723 /* WaveForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C43D22063303F003C7723 /* WaveForm.swift */; };
+		658C43D82063303F003C7723 /* WaveFormDecreasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C43D32063303F003C7723 /* WaveFormDecreasing.swift */; };
+		658C43D92063303F003C7723 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C43D42063303F003C7723 /* Wave.swift */; };
+		658C43DD20633080003C7723 /* OscilloscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C43DB20633080003C7723 /* OscilloscopeViewController.swift */; };
+		658C43DE20633080003C7723 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C43DC20633080003C7723 /* GameScene.swift */; };
+		658C43E020633266003C7723 /* WaveFromProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C43DF20633266003C7723 /* WaveFromProtocol.swift */; };
 		658FEDD4205D0BFC00CAAC51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FEDD3205D0BFC00CAAC51 /* AppDelegate.swift */; };
 		658FEDD6205D0BFC00CAAC51 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 658FEDD5205D0BFC00CAAC51 /* art.scnassets */; };
 		658FEDD8205D0BFC00CAAC51 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FEDD7205D0BFC00CAAC51 /* GameViewController.swift */; };
@@ -15,15 +23,6 @@
 		658FEDE0205D0BFC00CAAC51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658FEDDE205D0BFC00CAAC51 /* LaunchScreen.storyboard */; };
 		658FEDEB205D0BFC00CAAC51 /* interferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FEDEA205D0BFC00CAAC51 /* interferenceTests.swift */; };
 		658FEDF6205D0BFC00CAAC51 /* interferenceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FEDF5205D0BFC00CAAC51 /* interferenceUITests.swift */; };
-		658FEE11205D2D8700CAAC51 /* iron.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE0D205D2D8700CAAC51 /* iron.png */; };
-		658FEE12205D2D8700CAAC51 /* fork.obj in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE0E205D2D8700CAAC51 /* fork.obj */; };
-		658FEE13205D2D8700CAAC51 /* wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE0F205D2D8700CAAC51 /* wood.png */; };
-		658FEE14205D2D8700CAAC51 /* fork.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE10205D2D8700CAAC51 /* fork.mtl */; };
-		658FEE16205D2F3000CAAC51 /* 440.wav in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE15205D2F3000CAAC51 /* 440.wav */; };
-		658FEE19205D5BB000CAAC51 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE17205D5BB000CAAC51 /* confetti.png */; };
-		658FEE1D205D5C1200CAAC51 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE1B205D5C1200CAAC51 /* spark.png */; };
-		658FEE21205D5CDA00CAAC51 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE1F205D5CDA00CAAC51 /* smoke.png */; };
-		658FEE22205D5CDA00CAAC51 /* wave.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 658FEE20205D5CDA00CAAC51 /* wave.scnp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		658C43D02063303F003C7723 /* WaveFormDoppler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveFormDoppler.swift; path = ../../../wwdc/wwdc/Wave/WaveFormDoppler.swift; sourceTree = "<group>"; };
+		658C43D12063303F003C7723 /* WaveFormInterference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveFormInterference.swift; path = ../../../wwdc/wwdc/Wave/WaveFormInterference.swift; sourceTree = "<group>"; };
+		658C43D22063303F003C7723 /* WaveForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveForm.swift; path = ../../../wwdc/wwdc/Wave/WaveForm.swift; sourceTree = "<group>"; };
+		658C43D32063303F003C7723 /* WaveFormDecreasing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveFormDecreasing.swift; path = ../../../wwdc/wwdc/Wave/WaveFormDecreasing.swift; sourceTree = "<group>"; };
+		658C43D42063303F003C7723 /* Wave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wave.swift; path = ../../../wwdc/wwdc/Wave/Wave.swift; sourceTree = "<group>"; };
+		658C43DB20633080003C7723 /* OscilloscopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OscilloscopeViewController.swift; path = ../../../wwdc/wwdc/OscilloscopeViewController.swift; sourceTree = "<group>"; };
+		658C43DC20633080003C7723 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = ../../../wwdc/wwdc/GameScene.swift; sourceTree = "<group>"; };
+		658C43DF20633266003C7723 /* WaveFromProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveFromProtocol.swift; sourceTree = "<group>"; };
 		658FEDD0205D0BFC00CAAC51 /* interference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = interference.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		658FEDD3205D0BFC00CAAC51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		658FEDD5205D0BFC00CAAC51 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -58,15 +65,6 @@
 		658FEDF1205D0BFC00CAAC51 /* interferenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = interferenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		658FEDF5205D0BFC00CAAC51 /* interferenceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interferenceUITests.swift; sourceTree = "<group>"; };
 		658FEDF7205D0BFC00CAAC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		658FEE0D205D2D8700CAAC51 /* iron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iron.png; path = "../../../../fork OBJ/iron.png"; sourceTree = "<group>"; };
-		658FEE0E205D2D8700CAAC51 /* fork.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fork.obj; path = "../../../../fork OBJ/fork.obj"; sourceTree = "<group>"; };
-		658FEE0F205D2D8700CAAC51 /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wood.png; path = "../../../../fork OBJ/wood.png"; sourceTree = "<group>"; };
-		658FEE10205D2D8700CAAC51 /* fork.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fork.mtl; path = "../../../../fork OBJ/fork.mtl"; sourceTree = "<group>"; };
-		658FEE15205D2F3000CAAC51 /* 440.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 440.wav; sourceTree = "<group>"; };
-		658FEE17205D5BB000CAAC51 /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confetti.png; sourceTree = "<group>"; };
-		658FEE1B205D5C1200CAAC51 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		658FEE1F205D5CDA00CAAC51 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
-		658FEE20205D5CDA00CAAC51 /* wave.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = wave.scnp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +92,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		658C43CF20633023003C7723 /* Wave */ = {
+			isa = PBXGroup;
+			children = (
+				658C43D42063303F003C7723 /* Wave.swift */,
+				658C43D22063303F003C7723 /* WaveForm.swift */,
+				658C43D32063303F003C7723 /* WaveFormDecreasing.swift */,
+				658C43D02063303F003C7723 /* WaveFormDoppler.swift */,
+				658C43D12063303F003C7723 /* WaveFormInterference.swift */,
+				658C43DF20633266003C7723 /* WaveFromProtocol.swift */,
+			);
+			path = Wave;
+			sourceTree = "<group>";
+		};
+		658C43DA20633048003C7723 /* Oscilloscope */ = {
+			isa = PBXGroup;
+			children = (
+				658C43DC20633080003C7723 /* GameScene.swift */,
+				658C43DB20633080003C7723 /* OscilloscopeViewController.swift */,
+			);
+			path = Oscilloscope;
+			sourceTree = "<group>";
+		};
 		658FEDC7205D0BFC00CAAC51 = {
 			isa = PBXGroup;
 			children = (
@@ -117,11 +137,8 @@
 		658FEDD2205D0BFC00CAAC51 /* interference */ = {
 			isa = PBXGroup;
 			children = (
-				658FEE10205D2D8700CAAC51 /* fork.mtl */,
-				658FEE15205D2F3000CAAC51 /* 440.wav */,
-				658FEE0E205D2D8700CAAC51 /* fork.obj */,
-				658FEE0D205D2D8700CAAC51 /* iron.png */,
-				658FEE0F205D2D8700CAAC51 /* wood.png */,
+				658C43DA20633048003C7723 /* Oscilloscope */,
+				658C43CF20633023003C7723 /* Wave */,
 				658FEDD3205D0BFC00CAAC51 /* AppDelegate.swift */,
 				658FEDD5205D0BFC00CAAC51 /* art.scnassets */,
 				658FEDD7205D0BFC00CAAC51 /* GameViewController.swift */,
@@ -129,10 +146,6 @@
 				658FEDDC205D0BFC00CAAC51 /* Assets.xcassets */,
 				658FEDDE205D0BFC00CAAC51 /* LaunchScreen.storyboard */,
 				658FEDE1205D0BFC00CAAC51 /* Info.plist */,
-				658FEE1B205D5C1200CAAC51 /* spark.png */,
-				658FEE1F205D5CDA00CAAC51 /* smoke.png */,
-				658FEE20205D5CDA00CAAC51 /* wave.scnp */,
-				658FEE17205D5BB000CAAC51 /* confetti.png */,
 			);
 			path = interference;
 			sourceTree = "<group>";
@@ -259,19 +272,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658FEE1D205D5C1200CAAC51 /* spark.png in Resources */,
 				658FEDD6205D0BFC00CAAC51 /* art.scnassets in Resources */,
-				658FEE11205D2D8700CAAC51 /* iron.png in Resources */,
 				658FEDE0205D0BFC00CAAC51 /* LaunchScreen.storyboard in Resources */,
-				658FEE19205D5BB000CAAC51 /* confetti.png in Resources */,
-				658FEE16205D2F3000CAAC51 /* 440.wav in Resources */,
-				658FEE22205D5CDA00CAAC51 /* wave.scnp in Resources */,
-				658FEE12205D2D8700CAAC51 /* fork.obj in Resources */,
-				658FEE21205D5CDA00CAAC51 /* smoke.png in Resources */,
 				658FEDDD205D0BFC00CAAC51 /* Assets.xcassets in Resources */,
-				658FEE14205D2D8700CAAC51 /* fork.mtl in Resources */,
 				658FEDDB205D0BFC00CAAC51 /* Main.storyboard in Resources */,
-				658FEE13205D2D8700CAAC51 /* wood.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +301,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				658FEDD8205D0BFC00CAAC51 /* GameViewController.swift in Sources */,
+				658C43D52063303F003C7723 /* WaveFormDoppler.swift in Sources */,
+				658C43D72063303F003C7723 /* WaveForm.swift in Sources */,
+				658C43DE20633080003C7723 /* GameScene.swift in Sources */,
+				658C43D62063303F003C7723 /* WaveFormInterference.swift in Sources */,
+				658C43DD20633080003C7723 /* OscilloscopeViewController.swift in Sources */,
+				658C43E020633266003C7723 /* WaveFromProtocol.swift in Sources */,
+				658C43D92063303F003C7723 /* Wave.swift in Sources */,
 				658FEDD4205D0BFC00CAAC51 /* AppDelegate.swift in Sources */,
+				658C43D82063303F003C7723 /* WaveFormDecreasing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

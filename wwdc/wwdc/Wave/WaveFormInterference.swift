@@ -19,6 +19,7 @@ class WaveFormInterference: WaveForm {
             amplitudes.append(amplitudes.reduce(0.0, { (result, value) -> Double in
                 return result + value
             }))
+            dump(amplitudes)
             callback?(amplitudes)
             super.calc()
         }

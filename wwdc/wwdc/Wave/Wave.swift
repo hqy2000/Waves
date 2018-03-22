@@ -13,15 +13,20 @@ class Wave: NSMutableCopying {
         return Wave(amplitude: self.amplitude, waveLength: self.waveLength, frequency: self.frequency)
     }
     
-    public var phaseDiffrenrce:Double = 0.0
+    public var phaseDifferenrce:Double = 0.0 {
+        willSet {
+            if newValue > 1.0 {
+                fatalError("phaseDifference should be less than 1!")
+            }
+        }
+    }
     public var distanceFromObservor:Double {
         get {
             fatalError("This is a write-only variable!")
             //return 0.0
         }
         set {
-            let difference = newValue.remainder(dividingBy: self.waveLength) / self.waveLength
-            self.phaseDiffrenrce = difference * 2 * Double.pi
+            self.phaseDifferenrce = newValue.remainder(dividingBy: self.waveLength) / self.waveLength
         }
     }
     public var amplitude:Double // the height of the wave, measured in meters.
@@ -46,6 +51,13 @@ class Wave: NSMutableCopying {
         self.amplitude = amplitude
         self.waveLength = waveLength
         self.frequency = frequency
+    }
+    
+    init(amplitude: Double, waveLength: Double, frequency: Double, phaseDifference: Double) {
+        self.amplitude = amplitude
+        self.waveLength = waveLength
+        self.frequency = frequency
+        self.phaseDifferenrce = phaseDifference
     }
 }
 
