@@ -1,7 +1,10 @@
-//: [Previous](@previous)
+/*:
+ 
+ */
 
 import Foundation
+import PlaygroundSupport
 
-var str = "Hello, playground"
+PlaygroundPage.current.liveView = ForkScene()
 
 //: [Next](@next)

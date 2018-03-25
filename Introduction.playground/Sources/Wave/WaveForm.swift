@@ -9,37 +9,40 @@
 import Foundation
 
 public class WaveForm: WaveFormProtocol {
-    public var waves:[Wave]
+    internal struct WaveBehavior {
+        let properties: Wave
+        let startTime: Date = Date()
+    }
+    public var waves:[WaveBehavior]
     public var interval:TimeInterval
-    internal var startTime:Date? = nil
+    internal var startTime:[Date?] = []
     internal var running:Bool = false
 
     internal var callback:(([Double]) -> Void)? = nil
     
     required public init(waves: [Wave], reportInterval interval: TimeInterval) {
-        //super.init()
-        self.waves = waves
+        self.waves = waves.map({ wave in
+            return WaveBehavior(properties: wave, startTime: Date())
+        })
         self.interval = interval
     }
     
     public func start(callback: @escaping ([Double]) -> Void) {
         self.running = true
-        self.startTime = Date()
         self.callback = callback
         self.calc()
     }
     
     public func stop() {
         self.running = false
-        self.startTime = nil
-        self.callback = nil
+        self.startTime = []
     }
     
-    internal func getAmplitude(wave:Wave) -> Double {
-        let time = Date().timeIntervalSince(self.startTime!) + wave.period * wave.phaseDifferenrce
-        let current = time.remainder(dividingBy: wave.period)
-        let rawAmplitude = sin(current / wave.period * 2.0 * Double.pi)
-        let amplitude = rawAmplitude * wave.amplitude
+    internal func getAmplitude(wave:WaveBehavior) -> Double {
+        let time = Date().timeIntervalSince(wave.startTime) + wave.properties.period * wave.properties.phaseDifferenrce
+        let current = time.remainder(dividingBy: wave.properties.period)
+        let rawAmplitude = sin(current / wave.properties.period * 2.0 * Double.pi)
+        let amplitude = rawAmplitude * wave.properties.amplitude
         return amplitude
     }
     

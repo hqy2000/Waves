@@ -5,5 +5,6 @@
         <page name='Oscilloscope'/>
         <page name='Tuning Fork'/>
         <page name='Conclusion'/>
+        <page name='Wave'/>
     </pages>
 </playground>

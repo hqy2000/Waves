@@ -2,41 +2,51 @@ import QuartzCore
 import SceneKit
 import SpriteKit
 import ARKit
+import UIKit
 
 public class ForkScene: UIViewController {
     
-    let cameraNode = SCNNode()
-    let scene = SCNScene(named: "art.scnassets/fork.obj")!
-    let particle = SCNParticleSystem(named: "art.scnassets/wave.scnp", inDirectory: nil)!
-    
+    internal let cameraNode = SCNNode()
+    internal let scene = SCNScene(named: "art.scnassets/fork.obj")!
+    internal let particle = SCNParticleSystem(named: "art.scnassets/wave.scnp", inDirectory: nil)!
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        
+        let size = view.frame
+        self.setUpCamera()
+        self.setUpLight()
+        self.setUpScene()
+        self.setUpAdditionalView(size)
+    }
+    
+    internal func setUpCamera() {
         cameraNode.camera = SCNCamera()
         scene.rootNode.addChildNode(cameraNode)
         cameraNode.position = SCNVector3(x: 1, y: 1, z: 2)
         cameraNode.eulerAngles = SCNVector3(x: -15/180*Float.pi, y: 28/180*Float.pi, z: 0/180*Float.pi)
-        
+    }
+
+    internal func setUpLight() {
         let lightNode = SCNNode()
         lightNode.light = SCNLight()
         lightNode.light!.type = .ambient
         lightNode.position = SCNVector3(x: 0, y: 10, z: 10)
         scene.rootNode.addChildNode(lightNode)
-        
+    }
+    
+    internal func setUpScene() {
         let scnView = SCNView()
         scnView.scene = scene
         scnView.allowsCameraControl = false
         scnView.showsStatistics = true
         scnView.backgroundColor = UIColor.black
         self.view = scnView
-        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         scnView.addGestureRecognizer(tapGesture)
-
-        //UIApplication.shared.isIdleTimerDisabled = true
     }
-
+    
+    internal func setUpAdditionalView(_ frame: CGRect) {}
+    
     @objc public func handleTap(_ gestureRecognize: UIGestureRecognizer) {
         let scnView = self.view as! SCNView
         let p = gestureRecognize.location(in: scnView)
@@ -66,13 +76,10 @@ public class ForkScene: UIViewController {
             SCNTransaction.commit()
         }
     }
-    private func addWavesToOss() {
-        //self.oss.waves = [Wave(amplitude: 30, waveLength: 5, frequency: 0.5)]
-        //self.oss.waves[0].distanceFromObservor = 2.5
-    }
-    private func removeWavesFromOss() {
-        //self.oss.waves = []
-    }
+    
+    internal func addWavesToOss() {}
+    internal func removeWavesFromOss() {}
+    
     override public var prefersStatusBarHidden: Bool {
         return true
     }
