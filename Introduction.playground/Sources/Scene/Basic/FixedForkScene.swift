@@ -4,18 +4,22 @@ import SpriteKit
 import ARKit
 import UIKit
 
-public class ForkScene: UIViewController {
+public class FixedForkScene: UIViewController {
     
     internal let cameraNode = SCNNode()
     internal let scene = SCNScene(named: "art.scnassets/fork.obj")!
     internal let particle = SCNParticleSystem(named: "art.scnassets/wave.scnp", inDirectory: nil)!
-    
+    internal var scaleFactor: CGFloat {
+        get { return 1.0 }
+    }
     override public func viewDidLoad() {
         super.viewDidLoad()
         let size = view.frame
         self.setUpCamera()
         self.setUpLight()
         self.setUpScene()
+        self.setUpNode()
+        self.setUpRecognizer()
         self.setUpAdditionalView(size)
     }
     
@@ -41,8 +45,16 @@ public class ForkScene: UIViewController {
         scnView.showsStatistics = true
         scnView.backgroundColor = UIColor.black
         self.view = scnView
+    }
+    
+    internal func setUpNode() {
+        let fork = scene.rootNode.childNode(withName: "mesh_1", recursively: true)!
+        fork.runAction(SCNAction.scale(by: self.scaleFactor, duration: 0))
+    }
+    
+    internal func setUpRecognizer() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-        scnView.addGestureRecognizer(tapGesture)
+        self.view.addGestureRecognizer(tapGesture)
     }
     
     internal func setUpAdditionalView(_ frame: CGRect) {}

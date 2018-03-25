@@ -1,6 +1,6 @@
 import Foundation
 import SceneKit
-public class TwoForksScene: ForkScene {
+public class FiexedInterferenceScene: FixedForkScene {
     internal var oss:Oscilloscope<WaveFormInterference>? = nil
     internal var waves = [Wave(amplitude: 50, waveLength: 5, frequency: 0.5),Wave(amplitude: 50, waveLength: 5, frequency: 0.5)]
     
@@ -21,13 +21,15 @@ public class TwoForksScene: ForkScene {
         view.overlaySKScene = oss
     }
     
-    override internal func setUpScene() {
-        super.setUpScene()
+    override internal func setUpNode() {
+        super.setUpNode()
         let fork = self.scene.rootNode.childNodes[0].copy() as! SCNNode
         fork.position = SCNVector3(x: 1, y: 0, z: 0)
         fork.name = "1"
+        fork.runAction(SCNAction.scale(by: self.scaleFactor, duration: 0))
         self.scene.rootNode.addChildNode(fork)
     }
+    
     override internal func setUpCamera() {
         super.setUpCamera()
         cameraNode.eulerAngles = SCNVector3(x: -8/180*Float.pi, y: 8/180*Float.pi, z: 0/180*Float.pi)

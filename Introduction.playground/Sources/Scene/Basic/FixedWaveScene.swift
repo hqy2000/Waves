@@ -2,7 +2,7 @@ import Foundation
 import SceneKit
 import UIKit
 
-public class WaveScene: ForkScene {
+public class FixedWaveScene: FixedForkScene {
     internal var oss:Oscilloscope<WaveFormSimple>? = nil
     internal var waves = [Wave(amplitude: 50, waveLength: 5, frequency: 0.5)]
     
