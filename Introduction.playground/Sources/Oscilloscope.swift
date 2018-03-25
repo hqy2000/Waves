@@ -11,17 +11,12 @@ import GameplayKit
 
 public class Oscilloscope<T: WaveFormProtocol>: SKScene {
     
-    private var previous:[CGPoint?] = [nil]
-    private var waveform: T?
+    private var previous:[String:CGPoint] = [:]
+    public var waveform = T(waves: [], reportInterval: 0.05)
     private var node: SKNode = SKNode()
-    public var waves:[Wave] = [] {
-        didSet {
-            waveform?.stop()
-            self.previous.removeAll()
-            while previous.count <= waves.count {
-                previous.append(nil)
-            }
-            self.draw()
+    public var waves:[Wave] {
+        get {
+            return waveform.waves.map({ return $0.properties })
         }
     }
     public var height:CGFloat = 80
@@ -46,21 +41,22 @@ public class Oscilloscope<T: WaveFormProtocol>: SKScene {
     }
     
     private func draw() {
-        let waveform = T(waves: waves, reportInterval: 0.05)
         waveform.start { (amplitudes) in
             for (index,amplitude) in amplitudes.enumerated() {
                 var color = self.normalWaveColor
                 if(index >= self.waves.count){
                     color = self.finalWaveColor
+                    self.drawWave(index: "final", amplitude: amplitude, color: color)
+                } else {
+                    self.drawWave(index: self.waves[index].id, amplitude: amplitude, color: color)
                 }
-                self.drawWave(index: index, amplitude: amplitude, color: color)
+                
             }
             self.shift()
         }
-        self.waveform = waveform
     }
     
-    private func drawWave(index:Int, amplitude:Double, color:UIColor = UIColor.green) {
+    private func drawWave(index:String, amplitude:Double, color:UIColor = UIColor.green) {
         if let previous = previous[index] {
             var points = [
                 previous,
@@ -102,7 +98,6 @@ public class Oscilloscope<T: WaveFormProtocol>: SKScene {
             }
         }
     }
-
 }
 
 extension CGPath {

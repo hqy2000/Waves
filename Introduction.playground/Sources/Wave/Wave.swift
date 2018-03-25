@@ -8,7 +8,11 @@
 
 import Foundation
 
-public class Wave: NSMutableCopying {
+public class Wave: NSMutableCopying, Equatable {
+    public static func == (lhs: Wave, rhs: Wave) -> Bool {
+        return lhs.amplitude == rhs.amplitude && lhs.waveLength == rhs.waveLength && lhs.frequency == rhs.frequency
+    }
+    
     public func mutableCopy(with zone: NSZone? = nil) -> Any {
         return Wave(amplitude: self.amplitude, waveLength: self.waveLength, frequency: self.frequency)
     }
@@ -47,10 +51,13 @@ public class Wave: NSMutableCopying {
         }
     } // the horizontal speed of a point on a wave as it propagates, measured in meters / second.
     
+    public let id: String
+    
     public init(amplitude: Double, waveLength: Double, frequency: Double) {
         self.amplitude = amplitude
         self.waveLength = waveLength
         self.frequency = frequency
+        self.id = String(describing: amplitude) + String(describing: waveLength) + String(describing: frequency) + String(describing: arc4random_uniform(1000000))
     }
     
     public init(amplitude: Double, waveLength: Double, frequency: Double, phaseDifference: Double) {
@@ -58,6 +65,7 @@ public class Wave: NSMutableCopying {
         self.waveLength = waveLength
         self.frequency = frequency
         self.phaseDifferenrce = phaseDifference
+        self.id = String(describing: amplitude) + String(describing: waveLength) + String(describing: frequency) + String(describing: arc4random_uniform(1000000))
     }
 }
 

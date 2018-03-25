@@ -14,8 +14,8 @@ public class WaveFormDoppler: WaveForm {
     override func calc() {
         if self.running {
             let waveBefore = waves[0]
-            let waveAfter = waveBefore.mutableCopy() as! Wave
-            waveAfter.frequency = waveBefore.frequency * (330.0 + observorSpeed) / (330.0 - emmiterSpeed)
+            let waveAfter = waveBefore.mutableCopy() as! WaveBehavior
+            waveAfter.properties.frequency = waveBefore.properties.frequency * (330.0 + observorSpeed) / (330.0 - emmiterSpeed)
             let amplitudes = [self.getAmplitude(wave: waveBefore),self.getAmplitude(wave: waveAfter)]
             self.callback?(amplitudes)
             super.calc()

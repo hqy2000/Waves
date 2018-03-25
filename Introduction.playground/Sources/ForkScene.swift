@@ -52,17 +52,24 @@ public class ForkScene: UIViewController {
         let p = gestureRecognize.location(in: scnView)
         let hitResults = scnView.hitTest(p, options: [:])
         if hitResults.count > 0 {
-            cameraNode.removeAction(forKey: "audio")
-            scene.rootNode.removeParticleSystem(particle)
-            scene.rootNode.addParticleSystem(particle)
-            self.addWavesToOss()
+            let result = hitResults[0]
+            let node = result.node
+            
+            node.removeAction(forKey: "audio")
+            node.removeParticleSystem(particle)
+            node.addParticleSystem(particle)
+            var id = Int(node.name ?? "0")
+            if id == nil {
+                id = 0
+            }
+            self.addWavesToOss(index: id!)
             let audio = SCNAudioSource(fileNamed: "art.scnassets/440.wav")!
-            cameraNode.runAction(SCNAction.playAudio(audio, waitForCompletion: true), forKey: "audio", completionHandler: {
-                self.scene.rootNode.removeParticleSystem(self.particle)
-                self.removeWavesFromOss()
+            node.runAction(SCNAction.playAudio(audio, waitForCompletion: true), forKey: "audio", completionHandler: {
+                node.removeParticleSystem(self.particle)
+                self.removeWavesFromOss(index: id!)
             })
    
-            let result = hitResults[0]
+            
             let material = result.node.geometry!.firstMaterial!
             SCNTransaction.begin()
             SCNTransaction.animationDuration = 0.5
@@ -77,8 +84,8 @@ public class ForkScene: UIViewController {
         }
     }
     
-    internal func addWavesToOss() {}
-    internal func removeWavesFromOss() {}
+    internal func addWavesToOss(index:Int = 0) {}
+    internal func removeWavesFromOss(index:Int = 0) {}
     
     override public var prefersStatusBarHidden: Bool {
         return true

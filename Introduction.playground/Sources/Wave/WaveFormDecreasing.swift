@@ -15,7 +15,7 @@ public class WaveFormDecreasing: WaveForm {
             if waves.count > 0 {
                 let wave = waves[0]
                 var amplitudes = [self.getAmplitude(wave: wave)]
-                let parameter: Double = pow(self.decreasingConstant, Date().timeIntervalSince(self.startTime!))
+                let parameter: Double = pow(self.decreasingConstant, Date().timeIntervalSince(self.startTime[0]!))
                 amplitudes.append(amplitudes[0] * parameter)
                 callback?(amplitudes)
             } else {

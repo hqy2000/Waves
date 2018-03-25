@@ -9,10 +9,6 @@
 import Foundation
 
 public class WaveForm: WaveFormProtocol {
-    internal struct WaveBehavior {
-        let properties: Wave
-        let startTime: Date = Date()
-    }
     public var waves:[WaveBehavior]
     public var interval:TimeInterval
     internal var startTime:[Date?] = []
@@ -21,11 +17,13 @@ public class WaveForm: WaveFormProtocol {
     internal var callback:(([Double]) -> Void)? = nil
     
     required public init(waves: [Wave], reportInterval interval: TimeInterval) {
-        self.waves = waves.map({ wave in
-            return WaveBehavior(properties: wave, startTime: Date())
-        })
+        self.waves = waves.map { wave -> WaveBehavior in
+            return WaveBehavior(wave)
+        }
         self.interval = interval
     }
+    
+   
     
     public func start(callback: @escaping ([Double]) -> Void) {
         self.running = true

@@ -1,10 +1,31 @@
 import Foundation
 import SceneKit
 public class TwoForksScene: ForkScene {
+    internal var oss:Oscilloscope<WaveFormInterference>? = nil
+    internal var waves = [Wave(amplitude: 50, waveLength: 5, frequency: 0.5),Wave(amplitude: 50, waveLength: 5, frequency: 0.5)]
+    
+    override internal func addWavesToOss(index:Int = 0) {
+        self.removeWavesFromOss(index: index)
+        let wave = self.waves[index].mutableCopy() as! Wave
+        self.waves[index] = wave
+        oss!.waveform.addWave(wave)
+    }
+    
+    override internal func removeWavesFromOss(index:Int = 0) {
+        oss!.waveform.removeWave(self.waves[index].id)
+    }
+    
+    override internal func setUpAdditionalView(_ frame: CGRect) {
+        oss = Oscilloscope<WaveFormInterference>(size: CGSize(width: frame.width, height: frame.height))
+        let view = self.view as! SCNView
+        view.overlaySKScene = oss
+    }
+    
     override internal func setUpScene() {
         super.setUpScene()
         let fork = self.scene.rootNode.childNodes[0].copy() as! SCNNode
         fork.position = SCNVector3(x: 1, y: 0, z: 0)
+        fork.name = "1"
         self.scene.rootNode.addChildNode(fork)
     }
     override internal func setUpCamera() {

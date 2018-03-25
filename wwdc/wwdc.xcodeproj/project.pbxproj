@@ -7,82 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6523CE3F205E1F620099CF0A /* Os.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6523CE3E205E1F620099CF0A /* Os.sks */; };
-		6523CE42205EC9210099CF0A /* WaveForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6523CE41205EC9210099CF0A /* WaveForm.swift */; };
-		6523CE44205EC9510099CF0A /* WaveFormInterference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6523CE43205EC9510099CF0A /* WaveFormInterference.swift */; };
-		657B98EB206007AD00C049B1 /* WaveFormDecreasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B98EA206007AD00C049B1 /* WaveFormDecreasing.swift */; };
-		657B98ED2060168300C049B1 /* WaveFormDoppler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B98EC2060168300C049B1 /* WaveFormDoppler.swift */; };
-		65A4A9F3205D0792001F6EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4A9F2205D0792001F6EF2 /* AppDelegate.swift */; };
-		65A4A9F5205D0792001F6EF2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65A4A9F4205D0792001F6EF2 /* GameScene.sks */; };
-		65A4A9F7205D0792001F6EF2 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65A4A9F6205D0792001F6EF2 /* Actions.sks */; };
-		65A4A9F9205D0792001F6EF2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4A9F8205D0792001F6EF2 /* GameScene.swift */; };
-		65A4A9FB205D0792001F6EF2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4A9FA205D0792001F6EF2 /* GameViewController.swift */; };
-		65A4A9FE205D0792001F6EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A4A9FC205D0792001F6EF2 /* Main.storyboard */; };
-		65A4AA00205D0792001F6EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A4A9FF205D0792001F6EF2 /* Assets.xcassets */; };
-		65A4AA03205D0792001F6EF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A4AA01205D0792001F6EF2 /* LaunchScreen.storyboard */; };
-		65A4AA0E205D0792001F6EF2 /* wwdcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4AA0D205D0792001F6EF2 /* wwdcTests.swift */; };
-		65A4AA19205D0792001F6EF2 /* wwdcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4AA18205D0792001F6EF2 /* wwdcUITests.swift */; };
-		65A4FA69205D7E020019FAF1 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4FA68205D7E020019FAF1 /* Wave.swift */; };
+		651845172067894D0054A90B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651845162067894D0054A90B /* AppDelegate.swift */; };
+		651845192067894D0054A90B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651845182067894D0054A90B /* ViewController.swift */; };
+		6518451E2067894D0054A90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6518451D2067894D0054A90B /* Assets.xcassets */; };
+		651845212067894D0054A90B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6518451F2067894D0054A90B /* LaunchScreen.storyboard */; };
+		6518452B206789EB0054A90B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6518452A206789EB0054A90B /* art.scnassets */; };
+		65AF995D20678D850099A372 /* TwoForksScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995120678D850099A372 /* TwoForksScene.swift */; };
+		65AF995E20678D850099A372 /* ForkScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995220678D850099A372 /* ForkScene.swift */; };
+		65AF995F20678D850099A372 /* WaveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995320678D850099A372 /* WaveScene.swift */; };
+		65AF996020678D850099A372 /* WaveForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995520678D850099A372 /* WaveForm.swift */; };
+		65AF996120678D850099A372 /* WaveFormDoppler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995620678D850099A372 /* WaveFormDoppler.swift */; };
+		65AF996220678D850099A372 /* WaveFormDecreasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995720678D850099A372 /* WaveFormDecreasing.swift */; };
+		65AF996320678D850099A372 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995820678D850099A372 /* Wave.swift */; };
+		65AF996420678D850099A372 /* WaveFromProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995920678D850099A372 /* WaveFromProtocol.swift */; };
+		65AF996520678D850099A372 /* WaveFormSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995A20678D850099A372 /* WaveFormSimple.swift */; };
+		65AF996620678D850099A372 /* WaveFormInterference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995B20678D850099A372 /* WaveFormInterference.swift */; };
+		65AF996720678D850099A372 /* Oscilloscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995C20678D850099A372 /* Oscilloscope.swift */; };
+		65AF99692067A1F30099A372 /* WaveBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF99682067A1F30099A372 /* WaveBehavior.swift */; };
+		65AF996A2067A8F20099A372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6518451A2067894D0054A90B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		65A4AA0A205D0792001F6EF2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65A4A9E7205D0792001F6EF2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65A4A9EE205D0792001F6EF2;
-			remoteInfo = wwdc;
-		};
-		65A4AA15205D0792001F6EF2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65A4A9E7205D0792001F6EF2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65A4A9EE205D0792001F6EF2;
-			remoteInfo = wwdc;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		6523CE3E205E1F620099CF0A /* Os.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Os.sks; sourceTree = "<group>"; };
-		6523CE41205EC9210099CF0A /* WaveForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveForm.swift; sourceTree = "<group>"; };
-		6523CE43205EC9510099CF0A /* WaveFormInterference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveFormInterference.swift; sourceTree = "<group>"; };
-		657B98EA206007AD00C049B1 /* WaveFormDecreasing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveFormDecreasing.swift; sourceTree = "<group>"; };
-		657B98EC2060168300C049B1 /* WaveFormDoppler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveFormDoppler.swift; sourceTree = "<group>"; };
-		65A4A9EF205D0792001F6EF2 /* wwdc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wwdc.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65A4A9F2205D0792001F6EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65A4A9F4205D0792001F6EF2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		65A4A9F6205D0792001F6EF2 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		65A4A9F8205D0792001F6EF2 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		65A4A9FA205D0792001F6EF2 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		65A4A9FD205D0792001F6EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		65A4A9FF205D0792001F6EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		65A4AA02205D0792001F6EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		65A4AA04205D0792001F6EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65A4AA09205D0792001F6EF2 /* wwdcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wwdcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		65A4AA0D205D0792001F6EF2 /* wwdcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wwdcTests.swift; sourceTree = "<group>"; };
-		65A4AA0F205D0792001F6EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65A4AA14205D0792001F6EF2 /* wwdcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wwdcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		65A4AA18205D0792001F6EF2 /* wwdcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wwdcUITests.swift; sourceTree = "<group>"; };
-		65A4AA1A205D0792001F6EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65A4FA68205D7E020019FAF1 /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		651845132067894D0054A90B /* wwdc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wwdc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		651845162067894D0054A90B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		651845182067894D0054A90B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6518451B2067894D0054A90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6518451D2067894D0054A90B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		651845202067894D0054A90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		651845222067894D0054A90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6518452A206789EB0054A90B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = ../../Introduction.playground/Resources/art.scnassets; sourceTree = "<group>"; };
+		65AF995120678D850099A372 /* TwoForksScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoForksScene.swift; sourceTree = "<group>"; };
+		65AF995220678D850099A372 /* ForkScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForkScene.swift; sourceTree = "<group>"; };
+		65AF995320678D850099A372 /* WaveScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveScene.swift; sourceTree = "<group>"; };
+		65AF995520678D850099A372 /* WaveForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveForm.swift; sourceTree = "<group>"; };
+		65AF995620678D850099A372 /* WaveFormDoppler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveFormDoppler.swift; sourceTree = "<group>"; };
+		65AF995720678D850099A372 /* WaveFormDecreasing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveFormDecreasing.swift; sourceTree = "<group>"; };
+		65AF995820678D850099A372 /* Wave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		65AF995920678D850099A372 /* WaveFromProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveFromProtocol.swift; sourceTree = "<group>"; };
+		65AF995A20678D850099A372 /* WaveFormSimple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveFormSimple.swift; sourceTree = "<group>"; };
+		65AF995B20678D850099A372 /* WaveFormInterference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveFormInterference.swift; sourceTree = "<group>"; };
+		65AF995C20678D850099A372 /* Oscilloscope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oscilloscope.swift; sourceTree = "<group>"; };
+		65AF99682067A1F30099A372 /* WaveBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		65A4A9EC205D0792001F6EF2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65A4AA06205D0792001F6EF2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65A4AA11205D0792001F6EF2 /* Frameworks */ = {
+		651845102067894D0054A90B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,84 +61,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6523CE40205EC8E20099CF0A /* Wave */ = {
+		6518450A2067894D0054A90B = {
 			isa = PBXGroup;
 			children = (
-				65A4FA68205D7E020019FAF1 /* Wave.swift */,
-				6523CE41205EC9210099CF0A /* WaveForm.swift */,
-				6523CE43205EC9510099CF0A /* WaveFormInterference.swift */,
-				657B98EC2060168300C049B1 /* WaveFormDoppler.swift */,
-				657B98EA206007AD00C049B1 /* WaveFormDecreasing.swift */,
-			);
-			path = Wave;
-			sourceTree = "<group>";
-		};
-		65A4A9E6205D0792001F6EF2 = {
-			isa = PBXGroup;
-			children = (
-				65A4A9F1205D0792001F6EF2 /* wwdc */,
-				65A4AA0C205D0792001F6EF2 /* wwdcTests */,
-				65A4AA17205D0792001F6EF2 /* wwdcUITests */,
-				65A4A9F0205D0792001F6EF2 /* Products */,
+				651845152067894D0054A90B /* wwdc */,
+				651845142067894D0054A90B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		65A4A9F0205D0792001F6EF2 /* Products */ = {
+		651845142067894D0054A90B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65A4A9EF205D0792001F6EF2 /* wwdc.app */,
-				65A4AA09205D0792001F6EF2 /* wwdcTests.xctest */,
-				65A4AA14205D0792001F6EF2 /* wwdcUITests.xctest */,
+				651845132067894D0054A90B /* wwdc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		65A4A9F1205D0792001F6EF2 /* wwdc */ = {
+		651845152067894D0054A90B /* wwdc */ = {
 			isa = PBXGroup;
 			children = (
-				6523CE40205EC8E20099CF0A /* Wave */,
-				65A4A9F2205D0792001F6EF2 /* AppDelegate.swift */,
-				65A4A9F4205D0792001F6EF2 /* GameScene.sks */,
-				6523CE3E205E1F620099CF0A /* Os.sks */,
-				65A4A9F6205D0792001F6EF2 /* Actions.sks */,
-				65A4A9F8205D0792001F6EF2 /* GameScene.swift */,
-				65A4A9FA205D0792001F6EF2 /* GameViewController.swift */,
-				65A4A9FC205D0792001F6EF2 /* Main.storyboard */,
-				65A4A9FF205D0792001F6EF2 /* Assets.xcassets */,
-				65A4AA01205D0792001F6EF2 /* LaunchScreen.storyboard */,
-				65A4AA04205D0792001F6EF2 /* Info.plist */,
+				65AF995020678D850099A372 /* Sources */,
+				6518452A206789EB0054A90B /* art.scnassets */,
+				651845162067894D0054A90B /* AppDelegate.swift */,
+				651845182067894D0054A90B /* ViewController.swift */,
+				6518451A2067894D0054A90B /* Main.storyboard */,
+				6518451D2067894D0054A90B /* Assets.xcassets */,
+				6518451F2067894D0054A90B /* LaunchScreen.storyboard */,
+				651845222067894D0054A90B /* Info.plist */,
 			);
 			path = wwdc;
 			sourceTree = "<group>";
 		};
-		65A4AA0C205D0792001F6EF2 /* wwdcTests */ = {
+		65AF995020678D850099A372 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				65A4AA0D205D0792001F6EF2 /* wwdcTests.swift */,
-				65A4AA0F205D0792001F6EF2 /* Info.plist */,
+				65AF995120678D850099A372 /* TwoForksScene.swift */,
+				65AF995220678D850099A372 /* ForkScene.swift */,
+				65AF995320678D850099A372 /* WaveScene.swift */,
+				65AF995420678D850099A372 /* Wave */,
+				65AF995C20678D850099A372 /* Oscilloscope.swift */,
 			);
-			path = wwdcTests;
+			name = Sources;
+			path = ../../Introduction.playground/Sources;
 			sourceTree = "<group>";
 		};
-		65A4AA17205D0792001F6EF2 /* wwdcUITests */ = {
+		65AF995420678D850099A372 /* Wave */ = {
 			isa = PBXGroup;
 			children = (
-				65A4AA18205D0792001F6EF2 /* wwdcUITests.swift */,
-				65A4AA1A205D0792001F6EF2 /* Info.plist */,
+				65AF995520678D850099A372 /* WaveForm.swift */,
+				65AF995620678D850099A372 /* WaveFormDoppler.swift */,
+				65AF995720678D850099A372 /* WaveFormDecreasing.swift */,
+				65AF995820678D850099A372 /* Wave.swift */,
+				65AF995920678D850099A372 /* WaveFromProtocol.swift */,
+				65AF995A20678D850099A372 /* WaveFormSimple.swift */,
+				65AF995B20678D850099A372 /* WaveFormInterference.swift */,
+				65AF99682067A1F30099A372 /* WaveBehavior.swift */,
 			);
-			path = wwdcUITests;
+			path = Wave;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65A4A9EE205D0792001F6EF2 /* wwdc */ = {
+		651845122067894D0054A90B /* wwdc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65A4AA1D205D0792001F6EF2 /* Build configuration list for PBXNativeTarget "wwdc" */;
+			buildConfigurationList = 651845252067894D0054A90B /* Build configuration list for PBXNativeTarget "wwdc" */;
 			buildPhases = (
-				65A4A9EB205D0792001F6EF2 /* Sources */,
-				65A4A9EC205D0792001F6EF2 /* Frameworks */,
-				65A4A9ED205D0792001F6EF2 /* Resources */,
+				6518450F2067894D0054A90B /* Sources */,
+				651845102067894D0054A90B /* Frameworks */,
+				651845112067894D0054A90B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -177,72 +137,26 @@
 			);
 			name = wwdc;
 			productName = wwdc;
-			productReference = 65A4A9EF205D0792001F6EF2 /* wwdc.app */;
+			productReference = 651845132067894D0054A90B /* wwdc.app */;
 			productType = "com.apple.product-type.application";
-		};
-		65A4AA08205D0792001F6EF2 /* wwdcTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 65A4AA20205D0792001F6EF2 /* Build configuration list for PBXNativeTarget "wwdcTests" */;
-			buildPhases = (
-				65A4AA05205D0792001F6EF2 /* Sources */,
-				65A4AA06205D0792001F6EF2 /* Frameworks */,
-				65A4AA07205D0792001F6EF2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				65A4AA0B205D0792001F6EF2 /* PBXTargetDependency */,
-			);
-			name = wwdcTests;
-			productName = wwdcTests;
-			productReference = 65A4AA09205D0792001F6EF2 /* wwdcTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		65A4AA13205D0792001F6EF2 /* wwdcUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 65A4AA23205D0792001F6EF2 /* Build configuration list for PBXNativeTarget "wwdcUITests" */;
-			buildPhases = (
-				65A4AA10205D0792001F6EF2 /* Sources */,
-				65A4AA11205D0792001F6EF2 /* Frameworks */,
-				65A4AA12205D0792001F6EF2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				65A4AA16205D0792001F6EF2 /* PBXTargetDependency */,
-			);
-			name = wwdcUITests;
-			productName = wwdcUITests;
-			productReference = 65A4AA14205D0792001F6EF2 /* wwdcUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		65A4A9E7205D0792001F6EF2 /* Project object */ = {
+		6518450B2067894D0054A90B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Qingyang Hu";
 				TargetAttributes = {
-					65A4A9EE205D0792001F6EF2 = {
+					651845122067894D0054A90B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					65A4AA08205D0792001F6EF2 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 65A4A9EE205D0792001F6EF2;
-					};
-					65A4AA13205D0792001F6EF2 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 65A4A9EE205D0792001F6EF2;
 					};
 				};
 			};
-			buildConfigurationList = 65A4A9EA205D0792001F6EF2 /* Build configuration list for PBXProject "wwdc" */;
+			buildConfigurationList = 6518450E2067894D0054A90B /* Build configuration list for PBXProject "wwdc" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -250,108 +164,67 @@
 				en,
 				Base,
 			);
-			mainGroup = 65A4A9E6205D0792001F6EF2;
-			productRefGroup = 65A4A9F0205D0792001F6EF2 /* Products */;
+			mainGroup = 6518450A2067894D0054A90B;
+			productRefGroup = 651845142067894D0054A90B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65A4A9EE205D0792001F6EF2 /* wwdc */,
-				65A4AA08205D0792001F6EF2 /* wwdcTests */,
-				65A4AA13205D0792001F6EF2 /* wwdcUITests */,
+				651845122067894D0054A90B /* wwdc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		65A4A9ED205D0792001F6EF2 /* Resources */ = {
+		651845112067894D0054A90B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A4A9FE205D0792001F6EF2 /* Main.storyboard in Resources */,
-				6523CE3F205E1F620099CF0A /* Os.sks in Resources */,
-				65A4A9F5205D0792001F6EF2 /* GameScene.sks in Resources */,
-				65A4AA00205D0792001F6EF2 /* Assets.xcassets in Resources */,
-				65A4AA03205D0792001F6EF2 /* LaunchScreen.storyboard in Resources */,
-				65A4A9F7205D0792001F6EF2 /* Actions.sks in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65A4AA07205D0792001F6EF2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65A4AA12205D0792001F6EF2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				651845212067894D0054A90B /* LaunchScreen.storyboard in Resources */,
+				6518451E2067894D0054A90B /* Assets.xcassets in Resources */,
+				6518452B206789EB0054A90B /* art.scnassets in Resources */,
+				65AF996A2067A8F20099A372 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		65A4A9EB205D0792001F6EF2 /* Sources */ = {
+		6518450F2067894D0054A90B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A4A9F9205D0792001F6EF2 /* GameScene.swift in Sources */,
-				65A4FA69205D7E020019FAF1 /* Wave.swift in Sources */,
-				6523CE42205EC9210099CF0A /* WaveForm.swift in Sources */,
-				657B98EB206007AD00C049B1 /* WaveFormDecreasing.swift in Sources */,
-				65A4A9FB205D0792001F6EF2 /* GameViewController.swift in Sources */,
-				657B98ED2060168300C049B1 /* WaveFormDoppler.swift in Sources */,
-				6523CE44205EC9510099CF0A /* WaveFormInterference.swift in Sources */,
-				65A4A9F3205D0792001F6EF2 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65A4AA05205D0792001F6EF2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65A4AA0E205D0792001F6EF2 /* wwdcTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65A4AA10205D0792001F6EF2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65A4AA19205D0792001F6EF2 /* wwdcUITests.swift in Sources */,
+				65AF996020678D850099A372 /* WaveForm.swift in Sources */,
+				65AF996120678D850099A372 /* WaveFormDoppler.swift in Sources */,
+				65AF996620678D850099A372 /* WaveFormInterference.swift in Sources */,
+				651845192067894D0054A90B /* ViewController.swift in Sources */,
+				65AF996320678D850099A372 /* Wave.swift in Sources */,
+				651845172067894D0054A90B /* AppDelegate.swift in Sources */,
+				65AF995E20678D850099A372 /* ForkScene.swift in Sources */,
+				65AF996420678D850099A372 /* WaveFromProtocol.swift in Sources */,
+				65AF996720678D850099A372 /* Oscilloscope.swift in Sources */,
+				65AF995D20678D850099A372 /* TwoForksScene.swift in Sources */,
+				65AF995F20678D850099A372 /* WaveScene.swift in Sources */,
+				65AF996220678D850099A372 /* WaveFormDecreasing.swift in Sources */,
+				65AF99692067A1F30099A372 /* WaveBehavior.swift in Sources */,
+				65AF996520678D850099A372 /* WaveFormSimple.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		65A4AA0B205D0792001F6EF2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 65A4A9EE205D0792001F6EF2 /* wwdc */;
-			targetProxy = 65A4AA0A205D0792001F6EF2 /* PBXContainerItemProxy */;
-		};
-		65A4AA16205D0792001F6EF2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 65A4A9EE205D0792001F6EF2 /* wwdc */;
-			targetProxy = 65A4AA15205D0792001F6EF2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		65A4A9FC205D0792001F6EF2 /* Main.storyboard */ = {
+		6518451A2067894D0054A90B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				65A4A9FD205D0792001F6EF2 /* Base */,
+				6518451B2067894D0054A90B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		65A4AA01205D0792001F6EF2 /* LaunchScreen.storyboard */ = {
+		6518451F2067894D0054A90B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				65A4AA02205D0792001F6EF2 /* Base */,
+				651845202067894D0054A90B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -359,7 +232,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		65A4AA1B205D0792001F6EF2 /* Debug */ = {
+		651845232067894D0054A90B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -416,7 +289,7 @@
 			};
 			name = Debug;
 		};
-		65A4AA1C205D0792001F6EF2 /* Release */ = {
+		651845242067894D0054A90B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -466,7 +339,7 @@
 			};
 			name = Release;
 		};
-		65A4AA1E205D0792001F6EF2 /* Debug */ = {
+		651845262067894D0054A90B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -481,7 +354,7 @@
 			};
 			name = Debug;
 		};
-		65A4AA1F205D0792001F6EF2 /* Release */ = {
+		651845272067894D0054A90B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -493,111 +366,31 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		65A4AA21205D0792001F6EF2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = wwdcTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.nfls.wwdcTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wwdc.app/wwdc";
-			};
-			name = Debug;
-		};
-		65A4AA22205D0792001F6EF2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = wwdcTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.nfls.wwdcTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wwdc.app/wwdc";
-			};
-			name = Release;
-		};
-		65A4AA24205D0792001F6EF2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = wwdcUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.nfls.wwdcUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = wwdc;
-			};
-			name = Debug;
-		};
-		65A4AA25205D0792001F6EF2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = wwdcUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.nfls.wwdcUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = wwdc;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65A4A9EA205D0792001F6EF2 /* Build configuration list for PBXProject "wwdc" */ = {
+		6518450E2067894D0054A90B /* Build configuration list for PBXProject "wwdc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65A4AA1B205D0792001F6EF2 /* Debug */,
-				65A4AA1C205D0792001F6EF2 /* Release */,
+				651845232067894D0054A90B /* Debug */,
+				651845242067894D0054A90B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65A4AA1D205D0792001F6EF2 /* Build configuration list for PBXNativeTarget "wwdc" */ = {
+		651845252067894D0054A90B /* Build configuration list for PBXNativeTarget "wwdc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65A4AA1E205D0792001F6EF2 /* Debug */,
-				65A4AA1F205D0792001F6EF2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		65A4AA20205D0792001F6EF2 /* Build configuration list for PBXNativeTarget "wwdcTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65A4AA21205D0792001F6EF2 /* Debug */,
-				65A4AA22205D0792001F6EF2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		65A4AA23205D0792001F6EF2 /* Build configuration list for PBXNativeTarget "wwdcUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65A4AA24205D0792001F6EF2 /* Debug */,
-				65A4AA25205D0792001F6EF2 /* Release */,
+				651845262067894D0054A90B /* Debug */,
+				651845272067894D0054A90B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 65A4A9E7205D0792001F6EF2 /* Project object */;
+	rootObject = 6518450B2067894D0054A90B /* Project object */;
 }
