@@ -17,8 +17,8 @@ public class FixedForkScene: UIViewController {
         let size = view.frame
         self.setUpCamera()
         self.setUpLight()
-        self.setUpScene()
         self.setUpNode()
+        self.setUpScene()
         self.setUpRecognizer()
         self.setUpAdditionalView(size)
     }
@@ -59,7 +59,7 @@ public class FixedForkScene: UIViewController {
     
     internal func setUpAdditionalView(_ frame: CGRect) {}
     
-    @objc public func handleTap(_ gestureRecognize: UIGestureRecognizer) {
+    @objc internal func handleTap(_ gestureRecognize: UIGestureRecognizer) {
         let scnView = self.view as! SCNView
         let p = gestureRecognize.location(in: scnView)
         let hitResults = scnView.hitTest(p, options: [:])
@@ -70,15 +70,12 @@ public class FixedForkScene: UIViewController {
             node.removeAction(forKey: "audio")
             node.removeParticleSystem(particle)
             node.addParticleSystem(particle)
-            var id = Int(node.name ?? "0")
-            if id == nil {
-                id = 0
-            }
-            self.addWavesToOss(index: id!)
+            let id = self.getWaveId(node.name)
+            self.addWavesToOss(index: id)
             let audio = SCNAudioSource(fileNamed: "art.scnassets/440.wav")!
             node.runAction(SCNAction.playAudio(audio, waitForCompletion: true), forKey: "audio", completionHandler: {
                 node.removeParticleSystem(self.particle)
-                self.removeWavesFromOss(index: id!)
+                self.removeWavesFromOss(index: id)
             })
    
             
@@ -95,7 +92,13 @@ public class FixedForkScene: UIViewController {
             SCNTransaction.commit()
         }
     }
-    
+    internal func getWaveId(_ name: String?) -> Int {
+        var id = Int(name ?? "0")
+        if id == nil {
+            id = 0
+        }
+        return id!
+    }
     internal func addWavesToOss(index:Int = 0) {}
     internal func removeWavesFromOss(index:Int = 0) {}
     

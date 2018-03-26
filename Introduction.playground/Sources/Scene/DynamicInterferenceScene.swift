@@ -12,9 +12,14 @@ import SpriteKit
 import ARKit
 import UIKit
 
-class DynamicInterferenceScene: FiexedInterferenceScene, ARSCNViewDelegate {
+class DynamicInterferenceScene: FiexedInterferenceScene, ARSCNViewDelegate, ARSessionDelegate {
     override internal var scaleFactor: CGFloat {
         get { return 0.02 }
+    }
+    override internal func setUpNode() {
+        super.setUpNode()
+        scene.rootNode.childNodes[0].addParticleSystem(self.particle)
+        scene.rootNode.childNodes[3].addParticleSystem(self.particle)
     }
     override internal func setUpScene() {
         let scnView = ARSCNView()
@@ -23,11 +28,40 @@ class DynamicInterferenceScene: FiexedInterferenceScene, ARSCNViewDelegate {
         scnView.showsStatistics = true
         scnView.backgroundColor = UIColor.black
         scnView.delegate = self
+        scnView.session.delegate = self
+        //scnView.debugOptions = [ARSCNDebugOptions.showFeaturePoints,ARSCNDebugOptions.showWorldOrigin,.showPhysicsShapes]
         self.view = scnView
     }
+    override internal func setUpAdditionalView(_ frame: CGRect) {
+        super.setUpAdditionalView(frame)
+        self.addWavesToOss(index: 0)
+        self.addWavesToOss(index: 1)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
         (self.view as! ARSCNView).session.run(configuration)
+    }
+    
+    @objc override func handleTap(_ gestureRecognize: UIGestureRecognizer) {
+        return
+    }
+    
+    func session(_ session: ARSession, didUpdate frame: ARFrame) {
+        
+        let matrix = frame.camera.transform
+        self.waves[0].distanceFromObservor = matrix.getDistance(from: scene.rootNode.childNodes[0].position, withFactor: Float(self.scaleFactor))
+        self.waves[1].distanceFromObservor = matrix.getDistance(from: scene.rootNode.childNodes[3].position, withFactor: Float(self.scaleFactor))
+    }
+}
+
+extension matrix_float4x4 {
+    public func getDistance(from origin: SCNVector3, withFactor factor: Float) -> Double {
+        let x = columns.3.x - origin.x
+        let y = columns.3.y - origin.y
+        let z = columns.3.z - origin.z
+        let distance = sqrt(pow(Double(x), 2.0) + pow(Double(y), 2.0) + pow(Double(z), 2.0)) / Double(factor)
+        return distance
     }
 }
