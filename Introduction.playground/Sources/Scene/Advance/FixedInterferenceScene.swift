@@ -42,6 +42,7 @@ public class FiexedInterferenceScene: FixedForkScene {
         
     }
     
+    
     override internal func setUpCamera() {
         super.setUpCamera()
         cameraNode.eulerAngles = SCNVector3(x: -8/180*Float.pi, y: 8/180*Float.pi, z: 0/180*Float.pi)

@@ -57,6 +57,11 @@ class DynamicInterferenceScene: FiexedInterferenceScene, ARSCNViewDelegate, ARSe
 }
 
 extension matrix_float4x4 {
+    var position: double3 {
+        get {
+            return double3(Double(columns.3.x), Double(columns.3.y), Double(columns.3.z))
+        }
+    }
     public func getDistance(from origin: SCNVector3, withFactor factor: Float) -> Double {
         let x = columns.3.x - origin.x
         let y = columns.3.y - origin.y

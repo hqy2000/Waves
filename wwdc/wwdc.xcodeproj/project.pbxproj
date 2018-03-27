@@ -12,8 +12,10 @@
 		6518451E2067894D0054A90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6518451D2067894D0054A90B /* Assets.xcassets */; };
 		651845212067894D0054A90B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6518451F2067894D0054A90B /* LaunchScreen.storyboard */; };
 		6518452B206789EB0054A90B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6518452A206789EB0054A90B /* art.scnassets */; };
+		6529CE1E20695AFB00155E12 /* FixedDopplerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529CE1D20695AFB00155E12 /* FixedDopplerScene.swift */; };
 		654A5C022067E45D00D6F50D /* DynamicInterferenceScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654A5C012067E45D00D6F50D /* DynamicInterferenceScene.swift */; };
 		654A5C052067E66400D6F50D /* DynamicWaveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654A5C042067E66400D6F50D /* DynamicWaveScene.swift */; };
+		65AC59A3206A95ED0034CE5C /* DynamicDopplerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC59A2206A95ED0034CE5C /* DynamicDopplerScene.swift */; };
 		65AF995D20678D850099A372 /* FixedInterferenceScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995120678D850099A372 /* FixedInterferenceScene.swift */; };
 		65AF995E20678D850099A372 /* FixedForkScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995220678D850099A372 /* FixedForkScene.swift */; };
 		65AF995F20678D850099A372 /* FixedWaveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF995320678D850099A372 /* FixedWaveScene.swift */; };
@@ -38,8 +40,10 @@
 		651845202067894D0054A90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		651845222067894D0054A90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6518452A206789EB0054A90B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = ../../Introduction.playground/Resources/art.scnassets; sourceTree = "<group>"; };
+		6529CE1D20695AFB00155E12 /* FixedDopplerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedDopplerScene.swift; sourceTree = "<group>"; };
 		654A5C012067E45D00D6F50D /* DynamicInterferenceScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicInterferenceScene.swift; sourceTree = "<group>"; };
 		654A5C042067E66400D6F50D /* DynamicWaveScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicWaveScene.swift; sourceTree = "<group>"; };
+		65AC59A2206A95ED0034CE5C /* DynamicDopplerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicDopplerScene.swift; sourceTree = "<group>"; };
 		65AF995120678D850099A372 /* FixedInterferenceScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedInterferenceScene.swift; sourceTree = "<group>"; };
 		65AF995220678D850099A372 /* FixedForkScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedForkScene.swift; sourceTree = "<group>"; };
 		65AF995320678D850099A372 /* FixedWaveScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedWaveScene.swift; sourceTree = "<group>"; };
@@ -96,24 +100,56 @@
 			path = wwdc;
 			sourceTree = "<group>";
 		};
+		6529CE1A20695AB300155E12 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				65AF995520678D850099A372 /* WaveForm.swift */,
+				65AF995820678D850099A372 /* Wave.swift */,
+				65AF995920678D850099A372 /* WaveFromProtocol.swift */,
+				65AF99682067A1F30099A372 /* WaveBehavior.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6529CE1B20695AC300155E12 /* Advance */ = {
+			isa = PBXGroup;
+			children = (
+				65AF995620678D850099A372 /* WaveFormDoppler.swift */,
+				65AF995720678D850099A372 /* WaveFormDecreasing.swift */,
+				65AF995A20678D850099A372 /* WaveFormSimple.swift */,
+				65AF995B20678D850099A372 /* WaveFormInterference.swift */,
+			);
+			path = Advance;
+			sourceTree = "<group>";
+		};
+		6529CE1C20695AD400155E12 /* Advance */ = {
+			isa = PBXGroup;
+			children = (
+				654A5C012067E45D00D6F50D /* DynamicInterferenceScene.swift */,
+				65AF995120678D850099A372 /* FixedInterferenceScene.swift */,
+				65AC59A2206A95ED0034CE5C /* DynamicDopplerScene.swift */,
+				6529CE1D20695AFB00155E12 /* FixedDopplerScene.swift */,
+			);
+			path = Advance;
+			sourceTree = "<group>";
+		};
 		654A5C032067E46A00D6F50D /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				654A5C062067EC8900D6F50D /* Basic */,
-				654A5C012067E45D00D6F50D /* DynamicInterferenceScene.swift */,
-				65AF995120678D850099A372 /* FixedInterferenceScene.swift */,
+				6529CE1C20695AD400155E12 /* Advance */,
+				654A5C062067EC8900D6F50D /* Base */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
 		};
-		654A5C062067EC8900D6F50D /* Basic */ = {
+		654A5C062067EC8900D6F50D /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				654A5C042067E66400D6F50D /* DynamicWaveScene.swift */,
 				65AF995220678D850099A372 /* FixedForkScene.swift */,
 				65AF995320678D850099A372 /* FixedWaveScene.swift */,
 			);
-			path = Basic;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		65AF995020678D850099A372 /* Sources */ = {
@@ -130,14 +166,8 @@
 		65AF995420678D850099A372 /* Wave */ = {
 			isa = PBXGroup;
 			children = (
-				65AF995520678D850099A372 /* WaveForm.swift */,
-				65AF995620678D850099A372 /* WaveFormDoppler.swift */,
-				65AF995720678D850099A372 /* WaveFormDecreasing.swift */,
-				65AF995820678D850099A372 /* Wave.swift */,
-				65AF995920678D850099A372 /* WaveFromProtocol.swift */,
-				65AF995A20678D850099A372 /* WaveFormSimple.swift */,
-				65AF995B20678D850099A372 /* WaveFormInterference.swift */,
-				65AF99682067A1F30099A372 /* WaveBehavior.swift */,
+				6529CE1B20695AC300155E12 /* Advance */,
+				6529CE1A20695AB300155E12 /* Base */,
 			);
 			path = Wave;
 			sourceTree = "<group>";
@@ -220,6 +250,7 @@
 				65AF996620678D850099A372 /* WaveFormInterference.swift in Sources */,
 				651845192067894D0054A90B /* ViewController.swift in Sources */,
 				65AF996320678D850099A372 /* Wave.swift in Sources */,
+				6529CE1E20695AFB00155E12 /* FixedDopplerScene.swift in Sources */,
 				651845172067894D0054A90B /* AppDelegate.swift in Sources */,
 				654A5C052067E66400D6F50D /* DynamicWaveScene.swift in Sources */,
 				65AF995E20678D850099A372 /* FixedForkScene.swift in Sources */,
@@ -227,6 +258,7 @@
 				65AF996720678D850099A372 /* Oscilloscope.swift in Sources */,
 				65AF995D20678D850099A372 /* FixedInterferenceScene.swift in Sources */,
 				654A5C022067E45D00D6F50D /* DynamicInterferenceScene.swift in Sources */,
+				65AC59A3206A95ED0034CE5C /* DynamicDopplerScene.swift in Sources */,
 				65AF995F20678D850099A372 /* FixedWaveScene.swift in Sources */,
 				65AF996220678D850099A372 /* WaveFormDecreasing.swift in Sources */,
 				65AF99692067A1F30099A372 /* WaveBehavior.swift in Sources */,
