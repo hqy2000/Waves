@@ -12,7 +12,7 @@ import SpriteKit
 import ARKit
 import UIKit
 
-class DynamicInterferenceScene: FiexedInterferenceScene, ARSCNViewDelegate, ARSessionDelegate {
+public class DynamicInterferenceScene: FiexedInterferenceScene, ARSCNViewDelegate, ARSessionDelegate {
     override internal var scaleFactor: CGFloat {
         get { return 0.02 }
     }
@@ -38,7 +38,7 @@ class DynamicInterferenceScene: FiexedInterferenceScene, ARSCNViewDelegate, ARSe
         self.addWavesToOss(index: 1)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
         (self.view as! ARSCNView).session.run(configuration)
@@ -48,7 +48,7 @@ class DynamicInterferenceScene: FiexedInterferenceScene, ARSCNViewDelegate, ARSe
         return
     }
     
-    func session(_ session: ARSession, didUpdate frame: ARFrame) {
+    public func session(_ session: ARSession, didUpdate frame: ARFrame) {
         
         let matrix = frame.camera.transform
         self.waves[0].distanceFromObservor = matrix.getDistance(from: scene.rootNode.childNodes[0].position, withFactor: Float(self.scaleFactor))

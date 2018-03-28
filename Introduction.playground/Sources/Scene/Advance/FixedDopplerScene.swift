@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 import SceneKit
 
-class FixedDopplerScene: FixedForkScene {
+public class FixedDopplerScene: FixedForkScene {
     public var wave = [Wave(amplitude: 50, waveLength: 5, frequency: 0.4)]
     public var emmiterDirection = double3(0, 0, 0)
     public var observorDirection = double3(0, 0, 2)
     public var refreshInterval: TimeInterval = 0.1
-    internal override func setUpCamera() {
+    override internal func setUpCamera() {
         cameraNode.camera = SCNCamera()
         scene.rootNode.addChildNode(cameraNode)
         cameraNode.position = SCNVector3(x: 0, y: 0, z: 2)

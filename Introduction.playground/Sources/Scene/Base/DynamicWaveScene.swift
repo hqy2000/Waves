@@ -12,7 +12,7 @@ import SpriteKit
 import ARKit
 import UIKit
 
-class DynamicWaveScene: FixedWaveScene, ARSCNViewDelegate {
+public class DynamicWaveScene: FixedWaveScene, ARSCNViewDelegate {
     override internal var scaleFactor: CGFloat {
         get { return 0.02 }
     }
@@ -25,7 +25,7 @@ class DynamicWaveScene: FixedWaveScene, ARSCNViewDelegate {
         scnView.delegate = self
         self.view = scnView
     }
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
         (self.view as! ARSCNView).session.run(configuration)

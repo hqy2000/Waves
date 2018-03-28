@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios'>
+<playground version='6.0' target-platform='ios' executeOnSourceChanges='false'>
     <pages>
         <page name='Foreword'/>
         <page name='Oscilloscope'/>
         <page name='Tuning Fork'/>
+        <page name='Combined'/>
+        <page name='Augument Reality'/>
         <page name='Conclusion'/>
         <page name='Wave'/>
+        <page name='Interference'/>
+        <page name='Untitled Page'/>
     </pages>
 </playground>

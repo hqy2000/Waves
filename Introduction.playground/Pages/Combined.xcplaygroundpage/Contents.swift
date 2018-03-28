@@ -10,7 +10,7 @@ import ARKit
  
  Try run the code and tap on the small tunning fork. You will be able to hear a standard sine wave sound. Remember to use a headphone or turn of the mute mode.
  */
-let scene = FixedForkScene()
+let scene = FixedWaveScene()
 //#-hidden-code
 PlaygroundPage.current.liveView = scene
 //#-end-hidden-code

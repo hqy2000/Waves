@@ -12,7 +12,7 @@ import SpriteKit
 import ARKit
 import UIKit
 
-class DynamicDopplerScene: FixedDopplerScene, ARSessionDelegate {
+public class DynamicDopplerScene: FixedDopplerScene, ARSessionDelegate {
     override internal var scaleFactor: CGFloat {
         get { return 0.02 }
     }
@@ -28,12 +28,12 @@ class DynamicDopplerScene: FixedDopplerScene, ARSessionDelegate {
         scnView.preferredFramesPerSecond = 30
         self.view = scnView
     }
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
         (self.view as! ARSCNView).session.run(configuration)
     }
-    func session(_ session: ARSession, didUpdate frame: ARFrame) {
+    public func session(_ session: ARSession, didUpdate frame: ARFrame) {
         let position = frame.camera.transform.position
         self.observorDirection = (position - self.lastPosition).scaleBy(1.0 / Date().timeIntervalSince(self.lastReport))
         self.lastPosition = position

@@ -157,7 +157,6 @@
 			children = (
 				654A5C032067E46A00D6F50D /* Scene */,
 				65AF995420678D850099A372 /* Wave */,
-				65AF995C20678D850099A372 /* Oscilloscope.swift */,
 			);
 			name = Sources;
 			path = ../../Introduction.playground/Sources;
@@ -166,6 +165,7 @@
 		65AF995420678D850099A372 /* Wave */ = {
 			isa = PBXGroup;
 			children = (
+				65AF995C20678D850099A372 /* Oscilloscope.swift */,
 				6529CE1B20695AC300155E12 /* Advance */,
 				6529CE1A20695AB300155E12 /* Base */,
 			);
