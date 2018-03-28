@@ -1,6 +1,6 @@
 import Foundation
 import SceneKit
-public class FiexedInterferenceScene: FixedForkScene {
+public class FixedInterferenceScene: FixedForkScene {
     internal var oss:Oscilloscope<WaveFormInterference>? = nil
     public var waves = [Wave(amplitude: 50, waveLength: 5, frequency: 0.5),Wave(amplitude: 50, waveLength: 5, frequency: 0.5)] {
         willSet {

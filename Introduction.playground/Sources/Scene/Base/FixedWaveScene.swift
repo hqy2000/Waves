@@ -3,7 +3,7 @@ import SceneKit
 import UIKit
 
 public class FixedWaveScene: FixedForkScene {
-    internal var oss:Oscilloscope<WaveFormSimple>? = nil
+    internal var oss:Oscilloscope<WaveFormDecreasing>? = nil
     internal var waves = [Wave(amplitude: 50, waveLength: 5, frequency: 0.5)]
     
     override internal func addWavesToOss(index:Int = 0) {
@@ -18,7 +18,7 @@ public class FixedWaveScene: FixedForkScene {
     }
     
     override internal func setUpAdditionalView(_ frame: CGRect) {
-        oss = Oscilloscope<WaveFormSimple>(size: CGSize(width: frame.width, height: frame.height))
+        oss = Oscilloscope<WaveFormDecreasing>(size: CGSize(width: frame.width, height: frame.height))
         let view = self.view as! SCNView
         view.overlaySKScene = oss
     }

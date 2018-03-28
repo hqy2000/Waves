@@ -37,5 +37,4 @@ class IntroductionWaveController: UIViewController {
 }
 
 PlaygroundPage.current.liveView = IntroductionWaveController()
-PlaygroundPage.current.needsIndefiniteExecution = true
 //#-end-hidden-code

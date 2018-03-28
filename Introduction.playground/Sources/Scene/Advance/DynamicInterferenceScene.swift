@@ -12,7 +12,7 @@ import SpriteKit
 import ARKit
 import UIKit
 
-public class DynamicInterferenceScene: FiexedInterferenceScene, ARSCNViewDelegate, ARSessionDelegate {
+public class DynamicInterferenceScene: FixedInterferenceScene, ARSCNViewDelegate, ARSessionDelegate {
     override internal var scaleFactor: CGFloat {
         get { return 0.02 }
     }

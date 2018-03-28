@@ -4,11 +4,12 @@
         <page name='Foreword'/>
         <page name='Oscilloscope'/>
         <page name='Tuning Fork'/>
-        <page name='Combined'/>
+        <page name='Wave'/>
         <page name='Augument Reality'/>
         <page name='Conclusion'/>
-        <page name='Wave'/>
-        <page name='Interference'/>
-        <page name='Untitled Page'/>
+        <page name='Interference with Fixed Observor'/>
+        <page name='Interference with Fixed Emitter'/>
+        <page name='Doppler Effect with Preset'/>
+        <page name='Doppler Effect with Augument Reality'/>
     </pages>
 </playground>

@@ -1,3 +1,3 @@
 /*:
- Now we have stepped through all the equipments required for our experiments. In the next chapter, you will learn some foundamentals about waves prior to the 'big' experiment.
+ Now we have stepped through all the equipments required for our experiments. In the next chapter, you will expore some more fun characteristics about waves through interactive contents.
  */
