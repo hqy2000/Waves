@@ -5,3 +5,13 @@ chapters:
   - name: Introduction
     edge_to_edge_live_view: true
     live_view_mode: "VisibleByDefault"
+glossary:
+  amplitude: the greatest height of a wave above its undisturbed level
+  compression: a region of a sound wave where the particles are pushed together
+  period: the time for one complete oscillation of a pendulum, one complete vibration or the passage of one complete wave
+  sound wave: a wave that carries sound from place to place
+  wave speed: the speed at which a wave travels
+  wavefront: a line joining adjacent points on a curve that are all in step with each other
+  wavelength: the distance between adjacent crests (or troughs) of a wave
+  velocity: the speed of the object in a stated direction
+  frequency: the number of vibrations per second, or the number of waves per second passing a point
