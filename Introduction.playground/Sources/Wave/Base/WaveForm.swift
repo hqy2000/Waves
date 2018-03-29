@@ -11,7 +11,6 @@ import Foundation
 public class WaveForm: WaveFormProtocol {
     public var waves:[WaveBehavior]
     public var interval:TimeInterval
-    internal var startTime:[Date?] = []
     internal var running:Bool = false
 
     internal var callback:(([Double]) -> Void)? = nil
@@ -33,7 +32,6 @@ public class WaveForm: WaveFormProtocol {
     
     public func stop() {
         self.running = false
-        self.startTime = []
     }
     
     internal func getAmplitude(wave:WaveBehavior) -> Double {

@@ -4,7 +4,7 @@ import UIKit
 
 public class FixedWaveScene: FixedForkScene {
     internal var oss:Oscilloscope<WaveFormDecreasing>? = nil
-    internal var waves = [Wave(amplitude: 50, waveLength: 5, frequency: 0.5)]
+    public var waves = [Wave(amplitude: 50, waveLength: 5, frequency: 0.5)]
     
     override internal func addWavesToOss(index:Int = 0) {
         self.removeWavesFromOss(index: index)

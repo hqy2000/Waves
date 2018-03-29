@@ -6,10 +6,16 @@ import ARKit
 //#-end-hidden-code
 /*:
  # Augment Reality
- Now let us combine the tunning fork and the oscilloscope together. Clicking on the fork will result in a wave being produced, and the wave will be shown on the oscilloscope as a result.
+ Doing an experiment through clicking a fixed object is very boring, so let us do it in an interactive way. Find a clean table, hold your iPad, and click on 'Run My Code', you will see the whole set of equiment comming lively.
+ 
+ If you cannot find your equiment, try restart your code.
  */
-let scene = DynamicWaveScene()
+let wave = Wave(amplitude: /*#-editable-code*/100/*#-end-editable-code*/, waveLength: /*#-editable-code*/20/*#-end-editable-code*/, frequency: /*#-editable-code*/0.2/*#-end-editable-code*/)
+/*#-editable-code*/// wave.period = 5/*#-end-editable-code*/
 //#-hidden-code
-PlaygroundPage.current.liveView = scene
+let controller = DynamicWaveScene()
+controller.waves = [wave]
+PlaygroundPage.current.liveView = controller
 //#-end-hidden-code
 //: [Next](@next)
+

@@ -7,34 +7,14 @@ import ARKit
 /*:
  # Oscilloscope
  
- To obeserve a wave, we can use our hearing for sound waves and eyes for light waves. But what if we want to observe in a scientific wave? In this situation, we will use an oscilloscope.
+ To obeserve a wave, we can use our hearing for sound waves and eyes for light waves. But what if we want to observe in a scientific wave? In this situation, we will use an oscilloscope. An image of the wave will be produced on the screen of it. The trace on the screen will show the regular up-and-down pattern of the vibrations that produce the sound.
  
- Now please click on 'Run My Code' button. It will turn on an oscilloscope, a machine to display how much the wave vibrates. You can explore a little bit by changing the paramters of the wave being displayed below.
+ Now please click on 'Run My Code' button. It will turn on an oscilloscope. You can explore a little bit by changing the paramters of the wave being displayed below.
  */
-let amplitude: Double = /*#-editable-code*/80/*#-end-editable-code*/
-let frequency: Double = /*#-editable-code*/0.1/*#-end-editable-code*/
+let wave = Wave(amplitude: /*#-editable-code*/100/*#-end-editable-code*/, waveLength: /*#-editable-code*/20/*#-end-editable-code*/, frequency: /*#-editable-code*/0.2/*#-end-editable-code*/)
 //: [Next](@next)
 //#-hidden-code
-class IntroductionWaveController: UIViewController {
-    override func viewDidLoad() {
-        let view = SKView()
-        let scene = Oscilloscope<WaveFormSimple>(size: CGSize(width: self.view.frame.width, height: self.view.frame.height))
-        scene.height = self.view.frame.height / 2
-        scene.backgroundColor = .white
-        self.view = view
-        view.showsFPS = true
-        view.showsNodeCount = true
-        self.view.backgroundColor = .black
-        
-        let wave = Wave(
-            amplitude: amplitude,
-            waveLength: 5,
-            frequency: frequency
-        )
-        scene.waves = [wave]
-        view.presentScene(scene)
-    }
-}
-
-PlaygroundPage.current.liveView = IntroductionWaveController()
+let controller = FixedOscilloscopeScene()
+controller.wave = wave
+PlaygroundPage.current.liveView = controller
 //#-end-hidden-code

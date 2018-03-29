@@ -2,9 +2,10 @@
 <playground version='6.0' target-platform='ios' executeOnSourceChanges='false'>
     <pages>
         <page name='Foreword'/>
-        <page name='Oscilloscope'/>
         <page name='Tuning Fork'/>
+        <page name='Oscilloscope'/>
         <page name='Wave'/>
+        <page name='Combined'/>
         <page name='Augument Reality'/>
         <page name='Conclusion'/>
         <page name='Interference with Fixed Observor'/>
