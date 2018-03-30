@@ -1,6 +1,5 @@
 glossary:
   "amplitude": "the greatest height of a wave above its undisturbed level"
-  "compression": "a region of a sound wave where the particles are pushed together"
   "period": "the time for one complete oscillation of a pendulum, one complete vibration or the passage of one complete wave"
   "sound wave": "a wave that carries sound from place to place"
   "wave speed": "the speed at which a wave travels"
@@ -13,7 +12,7 @@ glossary:
   "constructive interference": "the situation that the resultant amplitude is maximum, when the phase difference between the waves is an even multiple of π"
   "destructive interference": "the situation that the resultant amplitude is minimum (usually 0), when the phase difference between the waves is an odd multiple of π"
   "phase": "the position of a point in time (an instant) on a waveform cycle"
-  "phase difference": "the difference, expressed in degrees or time, between two waves having the same frequency and referenced to the same point in time"
+  "phase+difference": "the difference, expressed in degrees or time, between two waves having the same frequency and referenced to the same point in time"
   "phase comparision": "a comparison of the phase of two waveforms, usually of the same nominal frequency."
   "phase shift": "any change that occurs in the phase of one quantity, or in the phase difference between two or more quantities"
 name: Waves

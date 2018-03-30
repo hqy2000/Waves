@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>amplitude</key>
+		<dict>
+			<key>Definition</key>
+			<string>the greatest height of a wave above its undisturbed level</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Introduction/Wave</string>
+				<key>Title</key>
+				<string>Wave</string>
+			</dict>
+		</dict>
+		<key>constructive interference</key>
+		<dict>
+			<key>Definition</key>
+			<string>the situation that the resultant amplitude is maximum, when the phase difference between the waves is an even multiple of π</string>
+		</dict>
+		<key>destructive interference</key>
+		<dict>
+			<key>Definition</key>
+			<string>the situation that the resultant amplitude is minimum (usually 0), when the phase difference between the waves is an odd multiple of π</string>
+		</dict>
+		<key>doppler effect</key>
+		<dict>
+			<key>Definition</key>
+			<string>the change in frequency or wavelength of a wave for an observer who is moving relative to the wave source</string>
+		</dict>
+		<key>frequency</key>
+		<dict>
+			<key>Definition</key>
+			<string>the number of vibrations per second, or the number of waves per second passing a point</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Introduction/Wave</string>
+				<key>Title</key>
+				<string>Wave</string>
+			</dict>
+		</dict>
+		<key>interference</key>
+		<dict>
+			<key>Definition</key>
+			<string>a phenomenon in which two waves superpose to form a resultant wave of greater, lower, or the same amplitude</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Introduction/Interference%20with%20Fixed%20Emitter</string>
+				<key>Title</key>
+				<string>Interference with Fixed Emitter</string>
+			</dict>
+		</dict>
+		<key>period</key>
+		<dict>
+			<key>Definition</key>
+			<string>the time for one complete oscillation of a pendulum, one complete vibration or the passage of one complete wave</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Introduction/Wave</string>
+				<key>Title</key>
+				<string>Wave</string>
+			</dict>
+		</dict>
+		<key>phase</key>
+		<dict>
+			<key>Definition</key>
+			<string>the position of a point in time (an instant) on a waveform cycle</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Introduction/Interference%20with%20Fixed%20Observor</string>
+				<key>Title</key>
+				<string>Interference with Fixed Observor</string>
+			</dict>
+		</dict>
+		<key>phase comparision</key>
+		<dict>
+			<key>Definition</key>
+			<string>a comparison of the phase of two waveforms, usually of the same nominal frequency.</string>
+		</dict>
+		<key>phase shift</key>
+		<dict>
+			<key>Definition</key>
+			<string>any change that occurs in the phase of one quantity, or in the phase difference between two or more quantities</string>
+		</dict>
+		<key>phase+difference</key>
+		<dict>
+			<key>Definition</key>
+			<string>the difference, expressed in degrees or time, between two waves having the same frequency and referenced to the same point in time</string>
+		</dict>
+		<key>sound wave</key>
+		<dict>
+			<key>Definition</key>
+			<string>a wave that carries sound from place to place</string>
+		</dict>
+		<key>velocity</key>
+		<dict>
+			<key>Definition</key>
+			<string>the speed of the object in a stated direction</string>
+		</dict>
+		<key>wave speed</key>
+		<dict>
+			<key>Definition</key>
+			<string>the speed at which a wave travels</string>
+		</dict>
+		<key>wavefront</key>
+		<dict>
+			<key>Definition</key>
+			<string>a line joining adjacent points on a curve that are all in step with each other</string>
+		</dict>
+		<key>wavelength</key>
+		<dict>
+			<key>Definition</key>
+			<string>the distance between adjacent crests (or troughs) of a wave</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Introduction/Wave</string>
+				<key>Title</key>
+				<string>Wave</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

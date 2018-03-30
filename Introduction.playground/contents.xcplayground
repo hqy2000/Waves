@@ -11,6 +11,6 @@
         <page name='Interference with Fixed Observor'/>
         <page name='Interference with Fixed Emitter'/>
         <page name='Doppler Effect with Preset'/>
-        <page name='Doppler Effect with Augument Reality'/>
+        <page name='Doppler Effect with AR Camera'/>
     </pages>
 </playground>

@@ -7,8 +7,8 @@ import UIKit
 public class FixedForkScene: UIViewController {
     
     internal let cameraNode = SCNNode()
-    internal let scene = SCNScene(named: "art.scnassets/fork.obj")!
-    internal let particle = SCNParticleSystem(named: "art.scnassets/wave.scnp", inDirectory: nil)!
+    internal let scene = SCNScene(named: "fork.obj")!
+    internal let particle = SCNParticleSystem(named: "wave.scnp", inDirectory: nil)!
     internal var scaleFactor: CGFloat {
         get { return 1.0 }
     }
@@ -72,7 +72,7 @@ public class FixedForkScene: UIViewController {
             node.addParticleSystem(particle)
             let id = self.getWaveId(node.name)
             self.addWavesToOss(index: id)
-            let audio = SCNAudioSource(fileNamed: "art.scnassets/440.wav")!
+            let audio = SCNAudioSource(fileNamed: "440.wav")!
             node.runAction(SCNAction.playAudio(audio, waitForCompletion: true), forKey: "audio", completionHandler: {
                 node.removeParticleSystem(self.particle)
                 self.removeWavesFromOss(index: id)
