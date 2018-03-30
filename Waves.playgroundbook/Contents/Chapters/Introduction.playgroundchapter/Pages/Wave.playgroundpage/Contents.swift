@@ -10,38 +10,25 @@ import ARKit
 /*:
  # Wave
  
- **Welcome to the world of waves!**
+ As perviously shown, a wave is caused by a substance vibrating. To extend
  
- Wave is a common physical phenomenon in the world, made by vibrations. Common things like sound and light are transmitted in the form of waves. Therefore it is an essential way to make communications.
+ Here are some foundamental properties of waves that is neccessary for you to know:
  
- In this playground book, you will be guided through the fanstaic world of waves and explore many interesting characteristics about waves in an interactive way.
+ - **ampltude(A)**: the distance from the maximum point to the undisturbed level, or, the height of the crest.
  
- Now please click on 'Run My Code' button. It will turn on an oscilloscope, a machine to display how much the wave vibrates. You can explore a little bit by changing the paramters below.
+ - **wavelength(λ)**: the distance from one crest of the wave to the next.
+ 
+ - **frequency(f)**: the number of waves send out each second.
+ 
+ - **period(T)**: the time taken for one complete wave to pass a point. This can be calculated through *1/f*.
+ 
+ Now please click on 'Run My Code' button. Explore how the properties of the waves will affect its waveform. There might be some properties that do not affect the waveform.
  */
-let amplitude: Double = /*#-editable-code*/80/*#-end-editable-code*/
-let frequency: Double = /*#-editable-code*/0.1/*#-end-editable-code*/
+let wave = Wave(amplitude: /*#-editable-code*/100/*#-end-editable-code*/, waveLength: /*#-editable-code*/20/*#-end-editable-code*/, frequency: /*#-editable-code*/0.2/*#-end-editable-code*/)
+/*#-editable-code*/// wave.period = 5/*#-end-editable-code*/ // If you want to change the period of the wave, which will affect the frequency set above, you can remove the comment and change the value.
+//: [Next](@next)
 //#-hidden-code
-class IntroductionWaveController: UIViewController {
-    override func viewDidLoad() {
-        let view = SKView()
-        let scene = Oscilloscope<WaveFormSimple>(size: CGSize(width: self.view.frame.width, height: self.view.frame.height))
-        scene.height = self.view.frame.height / 2
-        scene.backgroundColor = .white
-        self.view = view
-        view.showsFPS = true
-        view.showsNodeCount = true
-        self.view.backgroundColor = .black
-        
-        let wave = Wave(
-            amplitude: amplitude,
-            waveLength: 5,
-            frequency: frequency
-        )
-        scene.waves = [wave]
-        view.presentScene(scene)
-    }
-}
-
-PlaygroundPage.current.liveView = IntroductionWaveController()
-PlaygroundPage.current.needsIndefiniteExecution = true
+let controller = FixedOscilloscopeScene()
+controller.wave = wave
+PlaygroundPage.current.liveView = controller
 //#-end-hidden-code

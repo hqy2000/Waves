@@ -1,8 +1,5 @@
 //#-hidden-code
 import PlaygroundSupport
-import SceneKit
-import SpriteKit
-import ARKit
 let scene = FixedForkScene()
 PlaygroundPage.current.liveView = scene
 //#-end-hidden-code

@@ -1,8 +1,5 @@
 //#-hidden-code
 import PlaygroundSupport
-import SceneKit
-import SpriteKit
-import ARKit
 //#-end-hidden-code
 /*:
  # Wave

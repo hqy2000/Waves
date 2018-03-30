@@ -1,5 +1,11 @@
 //#-hidden-code
+import UIKit
+//#-end-hidden-code
+//#-hidden-code
 import PlaygroundSupport
+import SceneKit
+import SpriteKit
+import ARKit
 //#-end-hidden-code
 /*:
  # Oscilloscope

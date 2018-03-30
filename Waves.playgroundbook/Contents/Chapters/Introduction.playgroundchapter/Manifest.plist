@@ -8,8 +8,17 @@
 	<string>Introduction</string>
 	<key>Pages</key>
 	<array>
+		<string>Interference with Fixed Emitter.playgroundpage</string>
+		<string>Doppler Effect with Augument Reality.playgroundpage</string>
+		<string>Augument Reality.playgroundpage</string>
+		<string>Conclusion.playgroundpage</string>
 		<string>Tuning Fork.playgroundpage</string>
+		<string>Interference with Fixed Observor.playgroundpage</string>
+		<string>Foreword.playgroundpage</string>
 		<string>Wave.playgroundpage</string>
+		<string>Combined.playgroundpage</string>
+		<string>Oscilloscope.playgroundpage</string>
+		<string>Doppler Effect with Preset.playgroundpage</string>
 	</array>
 	<key>Version</key>
 	<string>1.0</string>

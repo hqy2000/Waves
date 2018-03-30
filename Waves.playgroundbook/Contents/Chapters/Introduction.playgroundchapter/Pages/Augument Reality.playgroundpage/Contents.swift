@@ -1,5 +1,11 @@
 //#-hidden-code
+import UIKit
+//#-end-hidden-code
+//#-hidden-code
 import PlaygroundSupport
+import SceneKit
+import SpriteKit
+import ARKit
 //#-end-hidden-code
 /*:
  # Augment Reality
@@ -15,4 +21,3 @@ controller.waves = [wave]
 PlaygroundPage.current.liveView = controller
 //#-end-hidden-code
 //: [Next](@next)
-
