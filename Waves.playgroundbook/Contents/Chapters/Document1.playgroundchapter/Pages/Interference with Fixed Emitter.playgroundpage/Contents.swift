@@ -7,7 +7,7 @@ import PlaygroundSupport
 /*:
  # Interference
  
- You have just explored about some basics in wave interference. However, in the last experiment, the observor is fixed in one position. Now, you are going to explore the situation with free observor. Click on 'Run My Code', and try to get a [constructive](glossary://constructive interference) and [destructive](glossary://destructive interference) [wave interference](glossary://interference).
+ You have just explored about some basics in wave interference. However, in the last experiment, the observor is fixed in one position. Now, you are going to explore the situation with free observor. Click on 'Run My Code', and try to get a [constructive](glossary://constructive%20interference) and [destructive](glossary://destructive%20interference) [wave interference](glossary://interference).
  */
 let waves = [
     Wave(amplitude: /*#-editable-code*/50/*#-end-editable-code*/, waveLength: /*#-editable-code*/5/*#-end-editable-code*/, frequency: /*#-editable-code*/0.5/*#-end-editable-code*/),

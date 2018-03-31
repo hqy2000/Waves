@@ -16,4 +16,5 @@ wave.phaseDifferenrce = /*#-editable-code*/0/*#-end-editable-code*/
 let controller = FixedOscilloscopeScene()
 controller.wave = wave
 PlaygroundPage.current.liveView = controller
+PlaygroundPage.current.needsIndefiniteExecution = true
 //#-end-hidden-code

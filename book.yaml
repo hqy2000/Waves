@@ -18,6 +18,7 @@ glossary:
 name: Waves
 identifier: io.nfls.hqy.playgrounds.waves
 deployment_target: ios11.0
+cover: cover.png
 chapters:
   - name: Introduction
     edge_to_edge_live_view: true

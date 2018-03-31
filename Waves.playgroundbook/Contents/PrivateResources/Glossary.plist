@@ -20,16 +20,37 @@
 		<dict>
 			<key>Definition</key>
 			<string>the situation that the resultant amplitude is maximum, when the phase difference between the waves is an even multiple of π</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Introduction/Interference%20with%20Fixed%20Emitter</string>
+				<key>Title</key>
+				<string>Interference with Fixed Emitter</string>
+			</dict>
 		</dict>
 		<key>destructive interference</key>
 		<dict>
 			<key>Definition</key>
 			<string>the situation that the resultant amplitude is minimum (usually 0), when the phase difference between the waves is an odd multiple of π</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Introduction/Interference%20with%20Fixed%20Emitter</string>
+				<key>Title</key>
+				<string>Interference with Fixed Emitter</string>
+			</dict>
 		</dict>
 		<key>doppler effect</key>
 		<dict>
 			<key>Definition</key>
 			<string>the change in frequency or wavelength of a wave for an observer who is moving relative to the wave source</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Introduction/Doppler%20Effect%20with%20Preset</string>
+				<key>Title</key>
+				<string>Doppler Effect with Preset</string>
+			</dict>
 		</dict>
 		<key>frequency</key>
 		<dict>
@@ -98,6 +119,13 @@
 		<dict>
 			<key>Definition</key>
 			<string>a wave that carries sound from place to place</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Introduction/Tuning%20Fork</string>
+				<key>Title</key>
+				<string>Tuning Fork</string>
+			</dict>
 		</dict>
 		<key>velocity</key>
 		<dict>
