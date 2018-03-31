@@ -11,8 +11,32 @@
 		651845192067894D0054A90B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651845182067894D0054A90B /* ViewController.swift */; };
 		6518451E2067894D0054A90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6518451D2067894D0054A90B /* Assets.xcassets */; };
 		651845212067894D0054A90B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6518451F2067894D0054A90B /* LaunchScreen.storyboard */; };
-		6518452B206789EB0054A90B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6518452A206789EB0054A90B /* art.scnassets */; };
 		65AF996A2067A8F20099A372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6518451A2067894D0054A90B /* Main.storyboard */; };
+		65BCDFBC206F9CA2009DF2B3 /* 440.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65BCDFB6206F9CA1009DF2B3 /* 440.wav */; };
+		65BCDFBD206F9CA2009DF2B3 /* iron.png in Resources */ = {isa = PBXBuildFile; fileRef = 65BCDFB7206F9CA1009DF2B3 /* iron.png */; };
+		65BCDFBE206F9CA2009DF2B3 /* wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 65BCDFB8206F9CA1009DF2B3 /* wood.png */; };
+		65BCDFBF206F9CA2009DF2B3 /* wave.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 65BCDFB9206F9CA2009DF2B3 /* wave.scnp */; };
+		65BCDFC0206F9CA2009DF2B3 /* fork.obj in Resources */ = {isa = PBXBuildFile; fileRef = 65BCDFBA206F9CA2009DF2B3 /* fork.obj */; };
+		65BCDFC1206F9CA2009DF2B3 /* fork.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 65BCDFBB206F9CA2009DF2B3 /* fork.mtl */; };
+		65BCDFD5206F9CAC009DF2B3 /* Oscilloscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFC2206F9CAA009DF2B3 /* Oscilloscope.swift */; };
+		65BCDFD6206F9CAC009DF2B3 /* FixedInterferenceScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFC3206F9CAA009DF2B3 /* FixedInterferenceScene.swift */; };
+		65BCDFD7206F9CAC009DF2B3 /* Preamble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFC4206F9CAA009DF2B3 /* Preamble.swift */; };
+		65BCDFD8206F9CAC009DF2B3 /* DynamicDopplerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFC5206F9CAA009DF2B3 /* DynamicDopplerScene.swift */; };
+		65BCDFD9206F9CAC009DF2B3 /* FixedOscilloscopeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFC6206F9CAA009DF2B3 /* FixedOscilloscopeScene.swift */; };
+		65BCDFDA206F9CAC009DF2B3 /* WaveForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFC7206F9CAA009DF2B3 /* WaveForm.swift */; };
+		65BCDFDB206F9CAC009DF2B3 /* WaveFormDoppler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFC8206F9CAB009DF2B3 /* WaveFormDoppler.swift */; };
+		65BCDFDC206F9CAC009DF2B3 /* WaveFromProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFC9206F9CAB009DF2B3 /* WaveFromProtocol.swift */; };
+		65BCDFDD206F9CAC009DF2B3 /* WaveFormSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFCA206F9CAB009DF2B3 /* WaveFormSimple.swift */; };
+		65BCDFDE206F9CAC009DF2B3 /* WaveFormInterference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFCB206F9CAB009DF2B3 /* WaveFormInterference.swift */; };
+		65BCDFDF206F9CAC009DF2B3 /* OscilloscopeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFCC206F9CAB009DF2B3 /* OscilloscopeScene.swift */; };
+		65BCDFE0206F9CAC009DF2B3 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFCD206F9CAB009DF2B3 /* Wave.swift */; };
+		65BCDFE1206F9CAC009DF2B3 /* DynamicInterferenceScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFCE206F9CAB009DF2B3 /* DynamicInterferenceScene.swift */; };
+		65BCDFE2206F9CAC009DF2B3 /* WaveFormDecreasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFCF206F9CAB009DF2B3 /* WaveFormDecreasing.swift */; };
+		65BCDFE3206F9CAC009DF2B3 /* FixedDopplerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFD0206F9CAB009DF2B3 /* FixedDopplerScene.swift */; };
+		65BCDFE4206F9CAC009DF2B3 /* FixedForkScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFD1206F9CAB009DF2B3 /* FixedForkScene.swift */; };
+		65BCDFE5206F9CAC009DF2B3 /* WaveBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFD2206F9CAB009DF2B3 /* WaveBehavior.swift */; };
+		65BCDFE6206F9CAC009DF2B3 /* FixedWaveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFD3206F9CAB009DF2B3 /* FixedWaveScene.swift */; };
+		65BCDFE7206F9CAC009DF2B3 /* DynamicWaveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCDFD4206F9CAC009DF2B3 /* DynamicWaveScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +47,31 @@
 		6518451D2067894D0054A90B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		651845202067894D0054A90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		651845222067894D0054A90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6518452A206789EB0054A90B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = ../../Introduction.playground/Resources/art.scnassets; sourceTree = "<group>"; };
+		65BCDFB6206F9CA1009DF2B3 /* 440.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 440.wav; path = ../../Waves.playgroundbook/Contents/PrivateResources/440.wav; sourceTree = "<group>"; };
+		65BCDFB7206F9CA1009DF2B3 /* iron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iron.png; path = ../../Waves.playgroundbook/Contents/PrivateResources/iron.png; sourceTree = "<group>"; };
+		65BCDFB8206F9CA1009DF2B3 /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wood.png; path = ../../Waves.playgroundbook/Contents/PrivateResources/wood.png; sourceTree = "<group>"; };
+		65BCDFB9206F9CA2009DF2B3 /* wave.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; name = wave.scnp; path = ../../Waves.playgroundbook/Contents/PrivateResources/wave.scnp; sourceTree = "<group>"; };
+		65BCDFBA206F9CA2009DF2B3 /* fork.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fork.obj; path = ../../Waves.playgroundbook/Contents/PrivateResources/fork.obj; sourceTree = "<group>"; };
+		65BCDFBB206F9CA2009DF2B3 /* fork.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fork.mtl; path = ../../Waves.playgroundbook/Contents/PrivateResources/fork.mtl; sourceTree = "<group>"; };
+		65BCDFC2206F9CAA009DF2B3 /* Oscilloscope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Oscilloscope.swift; path = ../../Waves.playgroundbook/Contents/Sources/Oscilloscope.swift; sourceTree = "<group>"; };
+		65BCDFC3206F9CAA009DF2B3 /* FixedInterferenceScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FixedInterferenceScene.swift; path = ../../Waves.playgroundbook/Contents/Sources/FixedInterferenceScene.swift; sourceTree = "<group>"; };
+		65BCDFC4206F9CAA009DF2B3 /* Preamble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preamble.swift; path = ../../Waves.playgroundbook/Contents/Sources/Preamble.swift; sourceTree = "<group>"; };
+		65BCDFC5206F9CAA009DF2B3 /* DynamicDopplerScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicDopplerScene.swift; path = ../../Waves.playgroundbook/Contents/Sources/DynamicDopplerScene.swift; sourceTree = "<group>"; };
+		65BCDFC6206F9CAA009DF2B3 /* FixedOscilloscopeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FixedOscilloscopeScene.swift; path = ../../Waves.playgroundbook/Contents/Sources/FixedOscilloscopeScene.swift; sourceTree = "<group>"; };
+		65BCDFC7206F9CAA009DF2B3 /* WaveForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveForm.swift; path = ../../Waves.playgroundbook/Contents/Sources/WaveForm.swift; sourceTree = "<group>"; };
+		65BCDFC8206F9CAB009DF2B3 /* WaveFormDoppler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveFormDoppler.swift; path = ../../Waves.playgroundbook/Contents/Sources/WaveFormDoppler.swift; sourceTree = "<group>"; };
+		65BCDFC9206F9CAB009DF2B3 /* WaveFromProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveFromProtocol.swift; path = ../../Waves.playgroundbook/Contents/Sources/WaveFromProtocol.swift; sourceTree = "<group>"; };
+		65BCDFCA206F9CAB009DF2B3 /* WaveFormSimple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveFormSimple.swift; path = ../../Waves.playgroundbook/Contents/Sources/WaveFormSimple.swift; sourceTree = "<group>"; };
+		65BCDFCB206F9CAB009DF2B3 /* WaveFormInterference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveFormInterference.swift; path = ../../Waves.playgroundbook/Contents/Sources/WaveFormInterference.swift; sourceTree = "<group>"; };
+		65BCDFCC206F9CAB009DF2B3 /* OscilloscopeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OscilloscopeScene.swift; path = ../../Waves.playgroundbook/Contents/Sources/OscilloscopeScene.swift; sourceTree = "<group>"; };
+		65BCDFCD206F9CAB009DF2B3 /* Wave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wave.swift; path = ../../Waves.playgroundbook/Contents/Sources/Wave.swift; sourceTree = "<group>"; };
+		65BCDFCE206F9CAB009DF2B3 /* DynamicInterferenceScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicInterferenceScene.swift; path = ../../Waves.playgroundbook/Contents/Sources/DynamicInterferenceScene.swift; sourceTree = "<group>"; };
+		65BCDFCF206F9CAB009DF2B3 /* WaveFormDecreasing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveFormDecreasing.swift; path = ../../Waves.playgroundbook/Contents/Sources/WaveFormDecreasing.swift; sourceTree = "<group>"; };
+		65BCDFD0206F9CAB009DF2B3 /* FixedDopplerScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FixedDopplerScene.swift; path = ../../Waves.playgroundbook/Contents/Sources/FixedDopplerScene.swift; sourceTree = "<group>"; };
+		65BCDFD1206F9CAB009DF2B3 /* FixedForkScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FixedForkScene.swift; path = ../../Waves.playgroundbook/Contents/Sources/FixedForkScene.swift; sourceTree = "<group>"; };
+		65BCDFD2206F9CAB009DF2B3 /* WaveBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveBehavior.swift; path = ../../Waves.playgroundbook/Contents/Sources/WaveBehavior.swift; sourceTree = "<group>"; };
+		65BCDFD3206F9CAB009DF2B3 /* FixedWaveScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FixedWaveScene.swift; path = ../../Waves.playgroundbook/Contents/Sources/FixedWaveScene.swift; sourceTree = "<group>"; };
+		65BCDFD4206F9CAC009DF2B3 /* DynamicWaveScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicWaveScene.swift; path = ../../Waves.playgroundbook/Contents/Sources/DynamicWaveScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +104,32 @@
 		651845152067894D0054A90B /* wwdc */ = {
 			isa = PBXGroup;
 			children = (
+				65BCDFB6206F9CA1009DF2B3 /* 440.wav */,
+				65BCDFBB206F9CA2009DF2B3 /* fork.mtl */,
+				65BCDFBA206F9CA2009DF2B3 /* fork.obj */,
+				65BCDFB7206F9CA1009DF2B3 /* iron.png */,
+				65BCDFB9206F9CA2009DF2B3 /* wave.scnp */,
+				65BCDFC5206F9CAA009DF2B3 /* DynamicDopplerScene.swift */,
+				65BCDFCE206F9CAB009DF2B3 /* DynamicInterferenceScene.swift */,
+				65BCDFD4206F9CAC009DF2B3 /* DynamicWaveScene.swift */,
+				65BCDFD0206F9CAB009DF2B3 /* FixedDopplerScene.swift */,
+				65BCDFD1206F9CAB009DF2B3 /* FixedForkScene.swift */,
+				65BCDFC3206F9CAA009DF2B3 /* FixedInterferenceScene.swift */,
+				65BCDFC6206F9CAA009DF2B3 /* FixedOscilloscopeScene.swift */,
+				65BCDFD3206F9CAB009DF2B3 /* FixedWaveScene.swift */,
+				65BCDFC2206F9CAA009DF2B3 /* Oscilloscope.swift */,
+				65BCDFCC206F9CAB009DF2B3 /* OscilloscopeScene.swift */,
+				65BCDFC4206F9CAA009DF2B3 /* Preamble.swift */,
+				65BCDFCD206F9CAB009DF2B3 /* Wave.swift */,
+				65BCDFD2206F9CAB009DF2B3 /* WaveBehavior.swift */,
+				65BCDFC7206F9CAA009DF2B3 /* WaveForm.swift */,
+				65BCDFCF206F9CAB009DF2B3 /* WaveFormDecreasing.swift */,
+				65BCDFC8206F9CAB009DF2B3 /* WaveFormDoppler.swift */,
+				65BCDFCB206F9CAB009DF2B3 /* WaveFormInterference.swift */,
+				65BCDFCA206F9CAB009DF2B3 /* WaveFormSimple.swift */,
+				65BCDFC9206F9CAB009DF2B3 /* WaveFromProtocol.swift */,
+				65BCDFB8206F9CA1009DF2B3 /* wood.png */,
 				65AF995020678D850099A372 /* Sources */,
-				6518452A206789EB0054A90B /* art.scnassets */,
 				651845162067894D0054A90B /* AppDelegate.swift */,
 				651845182067894D0054A90B /* ViewController.swift */,
 				6518451A2067894D0054A90B /* Main.storyboard */,
@@ -135,10 +207,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BCDFC1206F9CA2009DF2B3 /* fork.mtl in Resources */,
 				651845212067894D0054A90B /* LaunchScreen.storyboard in Resources */,
+				65BCDFBD206F9CA2009DF2B3 /* iron.png in Resources */,
+				65BCDFBE206F9CA2009DF2B3 /* wood.png in Resources */,
+				65BCDFC0206F9CA2009DF2B3 /* fork.obj in Resources */,
+				65BCDFBF206F9CA2009DF2B3 /* wave.scnp in Resources */,
 				6518451E2067894D0054A90B /* Assets.xcassets in Resources */,
-				6518452B206789EB0054A90B /* art.scnassets in Resources */,
 				65AF996A2067A8F20099A372 /* Main.storyboard in Resources */,
+				65BCDFBC206F9CA2009DF2B3 /* 440.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +226,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BCDFE6206F9CAC009DF2B3 /* FixedWaveScene.swift in Sources */,
+				65BCDFDA206F9CAC009DF2B3 /* WaveForm.swift in Sources */,
+				65BCDFD9206F9CAC009DF2B3 /* FixedOscilloscopeScene.swift in Sources */,
+				65BCDFDE206F9CAC009DF2B3 /* WaveFormInterference.swift in Sources */,
+				65BCDFD5206F9CAC009DF2B3 /* Oscilloscope.swift in Sources */,
+				65BCDFE0206F9CAC009DF2B3 /* Wave.swift in Sources */,
+				65BCDFD8206F9CAC009DF2B3 /* DynamicDopplerScene.swift in Sources */,
+				65BCDFE3206F9CAC009DF2B3 /* FixedDopplerScene.swift in Sources */,
+				65BCDFDB206F9CAC009DF2B3 /* WaveFormDoppler.swift in Sources */,
 				651845192067894D0054A90B /* ViewController.swift in Sources */,
+				65BCDFDC206F9CAC009DF2B3 /* WaveFromProtocol.swift in Sources */,
 				651845172067894D0054A90B /* AppDelegate.swift in Sources */,
+				65BCDFE4206F9CAC009DF2B3 /* FixedForkScene.swift in Sources */,
+				65BCDFE5206F9CAC009DF2B3 /* WaveBehavior.swift in Sources */,
+				65BCDFE1206F9CAC009DF2B3 /* DynamicInterferenceScene.swift in Sources */,
+				65BCDFD6206F9CAC009DF2B3 /* FixedInterferenceScene.swift in Sources */,
+				65BCDFD7206F9CAC009DF2B3 /* Preamble.swift in Sources */,
+				65BCDFDD206F9CAC009DF2B3 /* WaveFormSimple.swift in Sources */,
+				65BCDFE7206F9CAC009DF2B3 /* DynamicWaveScene.swift in Sources */,
+				65BCDFDF206F9CAC009DF2B3 /* OscilloscopeScene.swift in Sources */,
+				65BCDFE2206F9CAC009DF2B3 /* WaveFormDecreasing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

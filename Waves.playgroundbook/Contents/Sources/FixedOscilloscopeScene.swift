@@ -20,8 +20,8 @@ public class FixedOscilloscopeScene: UIViewController {
         scene.height = self.view.frame.height / 2
         scene.backgroundColor = .white
         self.view = view
-        view.showsFPS = true
-        view.showsNodeCount = true
+        //view.showsFPS = true
+        //view.showsNodeCount = true
         self.view.backgroundColor = .black
         scene.waveform.addWave(wave)
         view.presentScene(scene)

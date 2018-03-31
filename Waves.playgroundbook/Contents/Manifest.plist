@@ -7,7 +7,7 @@
 		<string>Document1.playgroundchapter</string>
 	</array>
 	<key>ContentIdentifier</key>
-	<string>com.apple.playgrounds.augmentedreality</string>
+	<string>io.nfls.hqy.playgrounds.waves</string>
 	<key>ContentVersion</key>
 	<string>1.0.1</string>
 	<key>DeploymentTarget</key>
@@ -15,7 +15,7 @@
 	<key>DevelopmentRegion</key>
 	<string>en</string>
 	<key>ImageReference</key>
-	<string>arkit-icon.png</string>
+	<string>cover.png</string>
 	<key>Name</key>
 	<string>Name</string>
 	<key>SwiftVersion</key>

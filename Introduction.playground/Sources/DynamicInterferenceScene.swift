@@ -18,14 +18,14 @@ public class DynamicInterferenceScene: FixedInterferenceScene, ARSCNViewDelegate
     }
     override internal func setUpNode() {
         super.setUpNode()
-        scene.rootNode.childNodes[0].addParticleSystem(self.particle)
-        scene.rootNode.childNodes[3].addParticleSystem(self.particle)
+        //scene.rootNode.childNodes[0].addParticleSystem(self.particle)
+        //scene.rootNode.childNodes[3].addParticleSystem(self.particle)
     }
     override internal func setUpScene() {
         let scnView = ARSCNView()
         scnView.scene = scene
         scnView.allowsCameraControl = false
-        scnView.showsStatistics = true
+        //scnView.showsStatistics = true
         scnView.backgroundColor = UIColor.black
         scnView.delegate = self
         scnView.session.delegate = self

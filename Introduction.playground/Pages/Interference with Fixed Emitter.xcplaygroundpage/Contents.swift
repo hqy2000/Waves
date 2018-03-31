@@ -12,7 +12,8 @@ let waves = [
 ]
 //#-hidden-code
 let scene = DynamicInterferenceScene()
-scene.waves = waves
+//dump(scene)
+//scene.waves = waves
 PlaygroundPage.current.liveView = scene
 //#-end-hidden-code
 //: [Next](@next)

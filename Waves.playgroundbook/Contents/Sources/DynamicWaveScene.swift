@@ -20,7 +20,7 @@ public class DynamicWaveScene: FixedWaveScene, ARSCNViewDelegate {
         let scnView = ARSCNView()
         scnView.scene = scene
         scnView.allowsCameraControl = false
-        scnView.showsStatistics = true
+        //scnView.showsStatistics = true
         scnView.backgroundColor = UIColor.black
         scnView.delegate = self
         self.view = scnView

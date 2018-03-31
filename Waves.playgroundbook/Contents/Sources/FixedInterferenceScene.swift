@@ -30,7 +30,7 @@ public class FixedInterferenceScene: FixedForkScene {
     
     override internal func setUpNode() {
         super.setUpNode()
-        let scene = SCNScene(named: "art.scnassets/fork.obj")!
+        let scene = SCNScene(named: "fork.obj")!
         let fork = scene.rootNode.childNodes[0]
         newPosition.x = newPosition.x * Float(self.scaleFactor)
         fork.position = newPosition

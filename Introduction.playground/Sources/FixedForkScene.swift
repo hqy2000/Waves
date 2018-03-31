@@ -42,7 +42,7 @@ public class FixedForkScene: UIViewController {
         let scnView = SCNView()
         scnView.scene = scene
         scnView.allowsCameraControl = false
-        scnView.showsStatistics = true
+        //scnView.showsStatistics = true
         scnView.backgroundColor = UIColor.black
         self.view = scnView
     }

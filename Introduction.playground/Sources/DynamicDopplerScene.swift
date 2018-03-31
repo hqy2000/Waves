@@ -22,7 +22,7 @@ public class DynamicDopplerScene: FixedDopplerScene, ARSessionDelegate {
         let scnView = ARSCNView()
         scnView.scene = scene
         scnView.allowsCameraControl = false
-        scnView.showsStatistics = true
+        //scnView.showsStatistics = true
         scnView.backgroundColor = UIColor.black
         scnView.session.delegate = self
         scnView.preferredFramesPerSecond = 30
