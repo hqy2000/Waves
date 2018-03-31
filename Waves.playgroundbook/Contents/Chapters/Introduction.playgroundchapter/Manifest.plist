@@ -8,17 +8,13 @@
 	<string>Introduction</string>
 	<key>Pages</key>
 	<array>
-		<string>Interference with Fixed Emitter.playgroundpage</string>
-		<string>Augument Reality.playgroundpage</string>
-		<string>Conclusion.playgroundpage</string>
-		<string>Tuning Fork.playgroundpage</string>
-		<string>Doppler Effect with AR Camera.playgroundpage</string>
-		<string>Interference with Fixed Observor.playgroundpage</string>
 		<string>Foreword.playgroundpage</string>
+		<string>Tuning Fork.playgroundpage</string>
+		<string>Oscilloscope.playgroundpage</string>
 		<string>Wave.playgroundpage</string>
 		<string>Combined.playgroundpage</string>
-		<string>Oscilloscope.playgroundpage</string>
-		<string>Doppler Effect with Preset.playgroundpage</string>
+		<string>Augument Reality.playgroundpage</string>
+		<string>Conclusion.playgroundpage</string>
 	</array>
 	<key>Version</key>
 	<string>1.0</string>
