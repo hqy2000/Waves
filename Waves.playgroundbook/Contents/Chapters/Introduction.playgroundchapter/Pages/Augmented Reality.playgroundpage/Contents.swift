@@ -5,7 +5,7 @@ import UIKit
 import PlaygroundSupport
 //#-end-hidden-code
 /*:
- # Augment Reality
+ # Augmented Reality
 
  Doing an experiment by clicking a fixed object is very boring, so let us do it in an interactive way. Find a clean table, hold your iPad, and click on 'Run My Code', you will see the whole set of equipment coming lively.
  
