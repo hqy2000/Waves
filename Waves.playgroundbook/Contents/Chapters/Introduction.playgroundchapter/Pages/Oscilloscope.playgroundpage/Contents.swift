@@ -7,7 +7,7 @@ import PlaygroundSupport
 /*:
  # Oscilloscope
  
- To observe a wave, we can use our hearing for sound waves and eyes for light waves. But what if we want to observe in a scientific wave? In this situation, we will use an oscilloscope. An image of the wave will be produced on the screen of it. The trace on the screen will show the regular up-and-down pattern of the vibrations that produce the sound, which is also called *waveform*.
+ To observe a wave, we can use our hearing for sound waves and eyes for light waves. But what if we want to observe in a scientific way? In this situation, we will use an oscilloscope. An image of the wave will be produced on the screen of it. The trace on the screen will show the regular up-and-down pattern of the vibrations that produce the sound, which is also called *waveform*.
  
  Now please click on 'Run My Code' button. It will turn on an oscilloscope. You can explore a little bit by changing the parameters of the wave being displayed below.
  */

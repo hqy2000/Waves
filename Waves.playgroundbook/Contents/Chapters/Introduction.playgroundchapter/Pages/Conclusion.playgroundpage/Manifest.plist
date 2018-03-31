@@ -7,7 +7,7 @@
 	<key>LiveViewEdgeToEdge</key>
 	<true/>
 	<key>LiveViewMode</key>
-	<string>VisibleByDefault</string>
+	<string>HiddenByDefault</string>
 	<key>Name</key>
 	<string>Conclusion</string>
 	<key>Version</key>
