@@ -11,7 +11,7 @@ import PlaygroundSupport
  
  In this experiment, you are going to explore the wave before and after the interference. Click on 'Run My Code', and tap each tuning fork. Observe the changes in the final wave. Remember both codes and your taps influence the [phase difference](glossary://phase%20difference).
  
- The amplitude of the final wave should be the total ampltude of the two waves at that time.
+ The amplitude of the final wave should be the total amplitude of the two waves at that time.
  
  When two waves are in [phase](glossary://phase), a [constructive interference](glossary://constructive%20interference) will happen, while when two waves are completely out of [phase](glossary://phase), a [destructive interference](glossary://destructive%20interference) will happen.
  */

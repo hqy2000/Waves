@@ -20,7 +20,7 @@ public class Wave: NSMutableCopying, Equatable {
     public var phaseDifferenrce:Double = 0.0 {
         willSet {
             if newValue > 1.0 {
-                fatalError("phaseDifference should be less than 1!")
+                fatalError("Phase difference should be less than 1!")
             }
         }
     }
@@ -33,9 +33,27 @@ public class Wave: NSMutableCopying, Equatable {
             self.phaseDifferenrce = newValue.remainder(dividingBy: self.waveLength) / self.waveLength
         }
     }
-    public var amplitude:Double // the height of the wave, measured in meters.
-    public var waveLength:Double // the distance between adjacent crests, measured in meters.
-    public var frequency:Double // the number of complete waves that pass a point in one second, measured in inverse seconds, or Hertz (Hz).
+    public var amplitude:Double {
+        willSet {
+            if newValue < 0 {
+                fatalError("The amplitude must be bigger than 0!")
+            }
+        }
+    } // the height of the wave, measured in meters.
+    public var waveLength:Double {
+        willSet {
+            if newValue < 0 {
+                fatalError("The wavelength must be bigger than 0!")
+            }
+        }
+    } // the distance between adjacent crests, measured in meters.
+    public var frequency:Double {
+        willSet {
+            if newValue < 0 {
+                fatalError("The frequency must be bigger than 0!")
+            }
+        }
+    } // the number of complete waves that pass a point in one second, measured in inverse seconds, or Hertz (Hz).
     public var period:Double {
         get {
             return 1.0 / frequency

@@ -34,12 +34,6 @@ public class FixedDopplerScene: FixedForkScene {
         self.move()
     }
     
-    override internal func setUpScene() {
-        super.setUpScene()
-        (self.view as! SCNView).allowsCameraControl = true
-    }
-    
-    
     internal func move() {
         let forkNode = scene.rootNode.childNodes[0]
         let forkPosition = double3(forkNode.position)
@@ -51,6 +45,10 @@ public class FixedDopplerScene: FixedForkScene {
         DispatchQueue.global().asyncAfter(deadline: .now() + self.refreshInterval) {
             self.move()
         }
+    }
+    
+    @objc override internal func handleTap(_ gestureRecognize: UIGestureRecognizer) {
+        return
     }
     
     
