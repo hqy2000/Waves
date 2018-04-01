@@ -14,7 +14,7 @@ import SceneKit
  
  */
 let wave = Wave(amplitude: /*#-editable-code*/50/*#-end-editable-code*/, waveLength: /*#-editable-code*/5/*#-end-editable-code*/, frequency: /*#-editable-code*/0.5/*#-end-editable-code*/)
-let speed = /*#-editable-code*/2.0/*#-end-editable-code*/
+let speed: Double = /*#-editable-code*/2.0/*#-end-editable-code*/
 //#-hidden-code
 let emmiterDirection = double3(0, 0, 0)
 let observorDirection = double3(0, 0, speed)
