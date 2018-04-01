@@ -30,7 +30,7 @@ public class Wave: NSMutableCopying, Equatable {
             //return 0.0
         }
         set {
-            self.phaseDifferenrce = newValue.remainder(dividingBy: self.waveLength) / self.waveLength
+            self.phaseDifferenrce = abs(newValue.remainder(dividingBy: self.waveLength) / self.waveLength)
         }
     }
     public var amplitude:Double {
