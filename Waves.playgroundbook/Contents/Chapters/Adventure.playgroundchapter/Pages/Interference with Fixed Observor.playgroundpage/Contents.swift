@@ -7,7 +7,7 @@ import PlaygroundSupport
 /*:
  # Interference
  
- When two waves meet together, what do you think will happen? Is it going to increase, decrease, or remain constant? In physics, this is called [wave interference](glossary://interference).
+ When two waves meet together, what do you think will happen to its loudness? Is it going to increase, decrease, or remain constant? In physics, this is called [wave interference](glossary://interference).
  
  In this experiment, you are going to explore the wave before and after the interference. Click on 'Run My Code', and tap each tuning fork with different intervals. Observe the changes in the final wave. 
  

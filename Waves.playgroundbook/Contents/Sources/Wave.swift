@@ -19,8 +19,8 @@ public class Wave: NSMutableCopying, Equatable {
     
     public var phaseDifferenrce:Double = 0.0 {
         willSet {
-            if newValue > 1.0 {
-                fatalError("Phase difference should be less than 1!")
+            if newValue > 1.0 || newValue < 0.0 {
+                fatalError("Phase difference should be greater than 0 and less than 1!")
             }
         }
     }

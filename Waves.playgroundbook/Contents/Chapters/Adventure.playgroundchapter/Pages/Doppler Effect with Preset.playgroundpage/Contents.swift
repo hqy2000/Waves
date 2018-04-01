@@ -8,7 +8,7 @@ import SceneKit
 /*:
  # Doppler Effect
  
- Have you ever experienced that the alert coming from an ambulance increasing and decreasing as it passes by? This is called [doppler effect](glossary://doppler%20effect).
+ Have you ever experienced that the tone(frequency) of the alert coming from an ambulance increasing and decreasing as it passes by? This is called [doppler effect](glossary://doppler%20effect).
  
  In this experiment, you will explore how the speed will influence the final frequency of the wave. Change the speed and click on 'Run My Code' and observe the changes in frequency.
  
